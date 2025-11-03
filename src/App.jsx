@@ -1,10 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/common/Navbar";
-import Footer from "./components/common/Footer";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Projects from "./pages/Projects";
-import Blog from "./pages/Blog";
-import Pages from "./pages/Pages";
-import Contact from "./pages/Contact";
+
+export default function App() {
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <MainLayout>
+            <Home />
+          </MainLayout>
+        }
+      />
+    </Routes>
+  );
+}
