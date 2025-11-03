@@ -1,15 +1,10 @@
-import React from "react";
-
-function App() {
-  return (
-    <>
-    <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="text-center text-4xl font-bold">
-        Hello Naman Working Vitereact
-      </h1>
-    </div>
-    </>
-  );
-}
-
-export default App;
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/common/Navbar";
+import Footer from "./components/common/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Projects from "./pages/Projects";
+import Blog from "./pages/Blog";
+import Pages from "./pages/Pages";
+import Contact from "./pages/Contact";

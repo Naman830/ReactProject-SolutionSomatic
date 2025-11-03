@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --main-color: #C2FF83;
+  --black-color: #000000;
+  --white-color: #ffffff;
+
+}
+
+body{
+  font-family: 'Roboto';
+}
+/* ============================================================================================ */
+/* NAVBAR */
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#navLinks a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  color: var(--black-color);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#navLinks a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: width 0.3s ease;
+}
+
+#navLinks a:hover::after {
+  width: 100%;
+}
+
+#navLinks a.active {
+  color: var(--main-color);
+}
+
+/* ============================================================================================  */
