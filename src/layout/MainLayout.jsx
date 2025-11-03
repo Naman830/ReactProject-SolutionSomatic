@@ -6,7 +6,7 @@ export default function MainLayout({ children }) {
     <>
       <Navbar />
       <main className="flex-grow pt-20">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
