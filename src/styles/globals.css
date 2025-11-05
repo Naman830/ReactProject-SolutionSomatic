@@ -14,13 +14,13 @@
 }
 /* Navbar */
 
-#navLinks a {
+#navLinks a , #footLinks a{
   font-family: var(--font-figtree);
   position: relative;
   transition: color 0.3s ease;
 }
 
-#navLinks a::after {
+#navLinks a::after , #footLinks a::after{
   content: "";
   position: absolute;
   bottom: -4px;
@@ -31,7 +31,7 @@
   transition: width 0.3s ease;
 }
 
-#navLinks a:hover::after {
+#navLinks a:hover::after , #footLinks a:hover::after{
   width: 100%;
 }
 
@@ -102,3 +102,17 @@
 
 
 /* FOOTER */
+
+@media (max-width: 850px) {
+  #footer-logo-image{
+    position: absolute;
+    top: -10px
+  }
+}
+
+@media (max-width: 764px) {
+  #footer-logo-image{
+    position: absolute;
+    top: 60px
+  }
+}

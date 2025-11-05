@@ -2,15 +2,22 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assests/logos/logo.png";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
+import { IoClose } from "react-icons/io5";
 import NavButton from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
 
-  const navLinkClass = ({ isActive }) =>  
+  const navLinkClass = ({ isActive }) =>
     `transition-all text-black font-400 text-[14px] leading[21px]
-  ${isActive ? "bg-[var(--main-color)] font-bold" : ""}`;
+  ${
+      isActive
+        ? "bg-[var(--main-color)] font-bold"
+        : ""
+    }`;
+
+    
 
   return (
     <nav className="flex items-center justify-between py-4 px-64 fixed min-w-full bg-white">
@@ -54,12 +61,9 @@ export default function Navbar() {
 
       {/* Right-Side Drawer Menu */}
       <div
-      id="menu-dropdown"
         className={`fixed top-22  h-full max-h-max rounded-2xl gap-3 bg-white shadow-2xl z-50 flex flex-col items-start w-full max-w-lvh px-8 py-10 transform transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]l ${
-          isOpen ? "translate-y-0 block" : "-translate-y-10 hidden"
-        }`
-        
-      }
+          isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+        }`}
       >
         <NavLink
           to="/"
