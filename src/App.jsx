@@ -10,8 +10,8 @@ import Projects from "./pages/Projects";
 export default function App() {
   return (
     <Routes>
-      <Route element={<MainLayout />}>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="service" element={<Service />} />
         <Route path="pages" element={<Pages />} />
