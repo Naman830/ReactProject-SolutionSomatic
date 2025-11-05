@@ -12,6 +12,23 @@
   height: auto;
   display: block;
 }
+/* ============================================================================================  */
+/* Button */
+#nav-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15.4px;
+}
+
+
+
+
+
+
+
+
+
+
 /* Navbar */
 
 #navLinks a , #footLinks a{
@@ -38,7 +55,6 @@
 #menu {
   display: none !important;
 }
-
 
 @media (max-width: 1550px) {
   nav {
@@ -82,25 +98,6 @@
   }
 }
 
-
-
-/* ============================================================================================  */
-/* Button */
-#nav-btn {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 15.4px;
-}
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 
 @media (max-width: 850px) {
@@ -116,3 +113,14 @@
     top: 60px
   }
 }
+
+
+
+
+
+
+
+
+
+
+
