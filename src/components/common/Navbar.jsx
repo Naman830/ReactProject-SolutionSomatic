@@ -11,16 +11,10 @@ export default function Navbar() {
 
   const navLinkClass = ({ isActive }) =>
     `transition-all text-black font-400 text-[14px] leading[21px]
-  ${
-      isActive
-        ? "bg-[var(--main-color)] font-bold"
-        : ""
-    }`;
-
-    
+  ${isActive ? "bg-[var(--main-color)] font-bold" : ""}`;
 
   return (
-    <nav className="flex items-center justify-between py-4 px-64 fixed min-w-full bg-white">
+    <nav className="flex items-center justify-between py-4 px-64 fixed min-w-full z-[1000] bg-white">
       <div id="logo">
         <Link to="/">
           <img src={logo} alt="logo" className="img-fluid" />
@@ -61,49 +55,49 @@ export default function Navbar() {
 
       {/* Right-Side Drawer Menu */}
       <div
-        className={`fixed top-22  h-full max-h-max rounded-2xl gap-3 bg-white shadow-2xl z-50 flex flex-col items-start w-full max-w-lvh px-8 py-10 transform transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]l ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+        className={`fixed top-[90px] left-4 right-4 md:left-10 md:right-10 bg-white shadow-2xl z-[100] flex flex-col items-start gap-6 px-6 py-10 rounded-3xl transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+          isOpen ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
         }`}
       >
         <NavLink
           to="/"
           onClick={closeMenu}
-          className="text-lg hover:text-[var(--main-color)] transition"
+          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
         >
           Home
         </NavLink>
         <NavLink
           to="/about"
           onClick={closeMenu}
-          className="text-lg hover:text-[var(--main-color)] transition"
+          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
         >
           About
         </NavLink>
         <NavLink
           to="/service"
           onClick={closeMenu}
-          className="text-lg hover:text -[var(--main-color)] transition"
+          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
         >
           Services
         </NavLink>
         <NavLink
           to="/pages"
           onClick={closeMenu}
-          className="text-lg hover:text-[var(--main-color)] transition"
+          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
         >
           Pages
         </NavLink>
         <NavLink
           to="/blog"
           onClick={closeMenu}
-          className="text-lg hover:text-[var(--main-color)] transition"
+          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
         >
           Blogs
         </NavLink>
         <NavLink
           to="/projects"
           onClick={closeMenu}
-          className="text-lg hover:text-[var(--main-color)] transition"
+          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
         >
           Projects
         </NavLink>
