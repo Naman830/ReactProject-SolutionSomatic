@@ -7,13 +7,12 @@
   --font-figtree: "Figtree", sans-serif;
   --font-sora: font-family: "Sora", sans-serif;
 }
-
-/* Navbar */
 .image-fluid {
   max-width: 100%;
   height: auto;
   display: block;
 }
+/* Navbar */
 
 #navLinks a {
   font-family: var(--font-figtree);
@@ -40,6 +39,7 @@
   display: none !important;
 }
 
+
 @media (max-width: 1550px) {
   nav {
     padding: 16px 180px !important;
@@ -61,7 +61,6 @@
     gap: calc(var(--spacing) * 12) !important;
   }
 }
-
 
 @media (max-width: 1000px) {
   #menu {
@@ -92,3 +91,14 @@
   font-size: 14px;
   line-height: 15.4px;
 }
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
