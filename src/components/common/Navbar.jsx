@@ -10,8 +10,15 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   const navLinkClass = ({ isActive }) =>
-    `transition-all text-black font-400 text-[14px] leading[21px]
-  ${isActive ? "bg-[var(--main-color)] font-bold" : ""}`;
+   `transition-all text-black font-400 text-[14px] leading[21px] ${
+  isActive ? "bg-[var(--main-color)] font-bold" : ""
+}`
+  const menuDropdownClass = ({ isActive }) =>
+  `text-lg  hover:font-bold font-[var(--font-figtree)] transition ${
+   isActive ? "font-bold" : ""
+  }`;
+
+
 
   return (
     <nav className="flex items-center justify-between py-4 px-64 fixed min-w-full z-[1000] bg-white">
@@ -62,42 +69,42 @@ export default function Navbar() {
         <NavLink
           to="/"
           onClick={closeMenu}
-          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
+          className={menuDropdownClass}
         >
           Home
         </NavLink>
         <NavLink
           to="/about"
           onClick={closeMenu}
-          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
+          className={menuDropdownClass}
         >
           About
         </NavLink>
         <NavLink
           to="/service"
           onClick={closeMenu}
-          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
+          className={menuDropdownClass}
         >
           Services
         </NavLink>
         <NavLink
           to="/pages"
           onClick={closeMenu}
-          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
+          className={menuDropdownClass}
         >
           Pages
         </NavLink>
         <NavLink
           to="/blog"
           onClick={closeMenu}
-          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
+          className={menuDropdownClass}
         >
           Blogs
         </NavLink>
         <NavLink
           to="/projects"
           onClick={closeMenu}
-          className="text-lg hover:font-bold font-[var(--font-figtree)] transition"
+          className={menuDropdownClass}
         >
           Projects
         </NavLink>
