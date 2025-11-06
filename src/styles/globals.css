@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
 
-*{
+* {
   box-sizing: border-box;
 }
 
 :root {
-  --main-color: #C2FF83;
+  --main-color: #c2ff83;
   --black-color: #000000;
   --white-color: #ffffff;
   --font-figtree: "Figtree", sans-serif;
-  --font-sora:"Sora", sans-serif;
+  --font-sora: "Sora", sans-serif;
 }
 img {
   max-width: 100%;
@@ -22,28 +22,28 @@ img {
   line-height: 15.4px;
 }
 
-#talk-btn{
-	width: 172px;
-	height: 172px;
-	transition: ease-in-out 0.6s;
-	margin-left: 39px;
-	position: relative;
+#talk-btn {
+  width: 172px;
+  height: 172px;
+  transition: ease-in-out 0.6s;
+  margin-left: 39px;
+  position: relative;
 }
 
-#talk-btn:hover{
+#talk-btn:hover {
   transform: translateY(4px);
   background-color: var(--black-color) !important;
   color: var(--white-color) !important;
 }
 
 #talk-btn::before {
-	top: 0;
-	bottom: 0;
-	right: 0;
-	height: 100%;
-	width: 0%;
-	position: absolute;
-	content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  content: "";
 
   background-color: var(--black-color);
   transition: 0.3s ease-out;
@@ -51,7 +51,7 @@ img {
 }
 
 #talk-btn:hover::before {
-  width: 100%;                 
+  width: 100%;
 }
 
 #talk-btn:hover span {
@@ -59,18 +59,24 @@ img {
 }
 
 
-
-
+@media (max-width: 768px) {
+  #talk-btn {
+  width: 140px;
+  height: 140px
+}
+}
 
 /* Navbar */
 
-#navLinks a , #footLinks a{
+#navLinks a,
+#footLinks a {
   font-family: var(--font-figtree);
   position: relative;
   transition: color 0.3s ease;
 }
 
-#navLinks a::after , #footLinks a::after{
+#navLinks a::after,
+#footLinks a::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -81,7 +87,8 @@ img {
   transition: width 0.3s ease;
 }
 
-#navLinks a:hover::after , #footLinks a:hover::after{
+#navLinks a:hover::after,
+#footLinks a:hover::after {
   width: 100%;
 }
 
@@ -134,24 +141,22 @@ img {
 /* FOOTER */
 
 @media (max-width: 850px) {
-  #footer-logo-image{
+  #footer-logo-image {
     position: absolute;
-    top: -10px
+    top: -10px;
   }
 }
 
 @media (max-width: 764px) {
-  #footer-logo-image{
+  #footer-logo-image {
     position: absolute;
-    top: 60px
+    top: 60px;
   }
 }
 
-
 /* ========================================= HOME */
 
-
-#expertDriven::before{
+#expertDriven::before {
   position: absolute;
   content: "";
   width: 64px;
@@ -163,9 +168,17 @@ img {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .home-hero{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 20px;  
+}
+}
 
-
-
-
-
-
+@media (max-width: 550px) {
+  figure{
+    display: none;
+  }
+}
