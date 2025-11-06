@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Icon from "./Icon";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Footerlogo from "../../assests/logos/footer-logo.png";
 
@@ -84,24 +85,41 @@ export default function Footer() {
                 <p>Copyright © 2025 Nuvia. All Rights Reserved.</p>
               </div>
               <div className="flex items-center justify-center gap-4">
-                <a
-                  href="#"
-                  className="hover:text-[var(--black-color)] hover:bg-[var(--main-color)] ease-in hover:border-[var(--main-color)] hover:-translate-y-1 duration-350 lg:p-3.5 p-2.5 border-2 border-white rounded-full lg:text-[22px] text-[16px] "
+                {/* Facebook */}
+                <Icon
+                  color="white"
+                  bgColor="transparent"
+                  border="2px solid white"
+                  hoverColor="black"
+                  hoverBg="var(--main-color)"
+                  hoverBorder="2px solid transparent"
                 >
                   <FaFacebookF />
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-[var(--black-color)] hover:bg-[var(--main-color)] ease-in hover:border-[var(--main-color)] hover:-translate-y-1 duration-350 lg:p-3.5 p-2.5 border-2 border-white rounded-full lg:text-[22px] text-[16px] "
+                </Icon>
+
+                {/* Instagram */}
+                <Icon
+                  color="white"
+                  bgColor="transparent"
+                  border="2px solid white"
+                            hoverColor="black"
+                   hoverBg="var(--main-color)"
+                  hoverBorder="2px solid transparent"
                 >
                   <FaInstagram />
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-[var(--black-color)] hover:bg-[var(--main-color)] ease-in hover:border-[var(--main-color)] hover:-translate-y-1 duration-350 lg:p-3.5 p-2.5 border-2 border-white rounded-full lg:text-[22px] text-[16px] "
+                </Icon>
+
+                {/* LinkedIn */}
+                <Icon
+                  color="white"
+                  bgColor="transparent"
+                  border="2px solid white"
+                           hoverColor="black"
+                   hoverBg="var(--main-color)"
+                  hoverBorder="2px solid transparent"
                 >
                   <FaLinkedinIn />
-                </a>
+                </Icon>
               </div>
             </div>
           </div>

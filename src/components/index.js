@@ -4,6 +4,7 @@ import Service from './service/Service'
 import Button from './common/Button'
 import Footer from './common/Footer'
 import Navbar from './common/Navbar'
+import Icon from './common/Icon'
 
 export{
     Home,
@@ -12,4 +13,5 @@ export{
     Footer,
     Navbar,
     Contact,
+    Icon
 }
