@@ -3,7 +3,7 @@ import logo from "../../assests/logos/logo.png";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import NavButton from "./Button";
+import {NavButton} from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

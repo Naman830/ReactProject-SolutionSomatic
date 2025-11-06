@@ -9,12 +9,10 @@
   --black-color: #000000;
   --white-color: #ffffff;
   --font-figtree: "Figtree", sans-serif;
-  --font-sora: font-family: "Sora", sans-serif;
+  --font-sora:"Sora", sans-serif;
 }
-.image-fluid {
+img {
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 /* ============================================================================================  */
 /* Button */
@@ -24,10 +22,41 @@
   line-height: 15.4px;
 }
 
+#talk-btn{
+	width: 172px;
+	height: 172px;
+	transition: ease-in-out 0.6s;
+	margin-left: 39px;
+	position: relative;
+}
 
+#talk-btn:hover{
+  transform: translateY(4px);
+  background-color: var(--black-color) !important;
+  color: var(--white-color) !important;
+}
 
+#talk-btn::before {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 0%;
+	position: absolute;
+	content: "";
 
+  background-color: var(--black-color);
+  transition: 0.3s ease-out;
+  border-radius: 100%;
+}
 
+#talk-btn:hover::before {
+  width: 100%;                 
+}
+
+#talk-btn:hover span {
+  color: var(--white-color);
+}
 
 
 
@@ -119,8 +148,20 @@
 }
 
 
+/* ========================================= HOME */
 
 
+#expertDriven::before{
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 5px;
+  background-color: var(--black-color);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
 
 
 
