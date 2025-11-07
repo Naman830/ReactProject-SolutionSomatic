@@ -24,7 +24,7 @@ export function NavButton({ name }) {
 export function TalkBtn() {
   return (
     <div
-    className="grid place-items-center bg-[var(--main-color)] text-center rounded-full"
+    className="grid place-items-center bg-[var(--main-color)] text-center rounded-full md:ml-10"
       id="talk-btn"
     >
       <span className="relative z-20 font-[600] text-[16px] font-[var[(--font-figtree)]]">
