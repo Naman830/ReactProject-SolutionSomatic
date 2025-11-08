@@ -15,7 +15,7 @@ img {
   max-width: 100%;
 }
 
-figure{
+figure {
   overflow: hidden;
 }
 /* ============================================================================================  */
@@ -62,8 +62,7 @@ figure{
   color: var(--white-color);
 }
 
-
-#CommonBtn{
+#CommonBtn {
   transition: all 0.8s ease-in-out;
   min-width: 161px;
   height: 48px;
@@ -74,9 +73,9 @@ figure{
 
 @media (max-width: 768px) {
   #talk-btn {
-  width: 140px;
-  height: 140px
-}
+    width: 140px;
+    height: 140px;
+  }
 }
 
 /* Navbar */
@@ -182,25 +181,73 @@ figure{
 }
 
 @media (max-width: 768px) {
-  .home-hero{
-  display: grid;
-  place-items: center;
-  text-align: center;
-  gap: 20px;  
-}
+  .home-hero {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 550px) {
-  .hero-1-figure{
+  .hero-1-figure {
     display: none;
   }
 }
 
-.hero-img figure img{
+.hero-img figure img {
   transition: ease-in-out 1s;
 }
 
-.hero-img figure:hover img{
-    transform: scale(1.02);
+.hero-img figure:hover img {
+  transform: scale(1.02);
   border-radius: 30px;
 }
+
+/* ============================================ PAGES */
+
+#AboutUs-text::before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 3px;
+  background-color: var(--white-color);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+
+
+#About-Stats div span{
+	font-size: 70px;
+	line-height: 70px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	font-family: var(--font-figtree);
+  color: var(--white-color);
+}
+
+#About-Stats div p{
+	margin-bottom: 0;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--white-color);
+}
+
+
+@media (max-width: 764px) {
+  
+#About-Stats div span{
+	font-size: 50px;
+	line-height: 60px;
+}
+
+#About-Stats div p{
+	font-size: 16px;
+	line-height: 18px;
+}
+
+}
+
