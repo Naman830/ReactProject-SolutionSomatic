@@ -4,11 +4,10 @@ import Hero1 from "../assests/images/hero-1.jpg";
 import Hero2 from "../assests/images/hero-2.jpg";
 import Hero3 from "../assests/images/hero-3.jpg";
 import Service1 from "../assests/icons/service-1.png";
-
-
+import HomeService from "../assests/images/service-home.jpg"
+import { FaArrowRight } from "react-icons/fa";
 import { TalkBtn } from "../components/common/Button";
 import { AboutUs } from "../components/CommonPages/Pages";
-
 
 const Home = () => {
   return (
@@ -77,28 +76,141 @@ const Home = () => {
       {/* Service Section */}
       <section className="w-full md:py-16 py-8 bg-white">
         <div className="lg:container w-full mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto sm:mb-24 mb-14">
             <span className="font-[var[(--font-sora)]] font-[600] text-2xl mb-4 block">
               What We Do
             </span>
-            <h2 className="font-[var[(--font-figtree)]] font-[800] text-7xl">
+            <h2 className="font-[var[(--font-figtree)]] font-[800] lg:text-7xl md:text-6xl sm:text-5xl text-4xl">
               Explore Our Full Range of Expert Digital{" "}
               <span className="bg-[var(--main-color)]">Services</span>
             </h2>
           </div>
 
-          <div>
-            <div className="services">
-              <figure>
+          {/* 1 */}
+          <div className="max-w-full font-[var[(--font-figtree)]]">
+            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
+              <figure id="serviceImg">
                 <img src={Service1} alt="" />
               </figure>
-              <div className="">
-                <h4></h4>
-                <p></p>
+              <div className="inner-service-div md:gap-7 items-center">
+                <div className="">
+                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
+                    Branding & Design
+                  </h4>
+                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
+                    Cohesive brand systems that tell your unique story. We craft
+                    logos, guidelines, and assets to define your visual voice.
+                  </p>
+                </div>
+                <div className="relative" id="serviceHiddenImage">
+                  <figure className="w-full">
+                    <img src={HomeService} alt="" className="rounded-4xl" />
+                  </figure>
+                </div>
+                <div className="">
+                  <a
+                    href="#"
+                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
+                  >
+                    <FaArrowRight className="-rotate-45" />
+                  </a>
+                </div>
               </div>
-              <div className=""></div>
-              <div className="">
-                <a href="#"></a>
+            </div>
+          </div>
+          {/* 2 */}
+            <div className="max-w-full font-[var[(--font-figtree)]]">
+            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
+              <figure id="serviceImg">
+                <img src={Service1} alt="" />
+              </figure>
+              <div className="inner-service-div md:gap-7 items-center">
+                <div className="">
+                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
+                    Branding & Design
+                  </h4>
+                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
+                    Cohesive brand systems that tell your unique story. We craft
+                    logos, guidelines, and assets to define your visual voice.
+                  </p>
+                </div>
+                <div className="relative" id="serviceHiddenImage">
+                  <figure className="w-full">
+                    <img src={HomeService} alt="" className="rounded-4xl" />
+                  </figure>
+                </div>
+                <div className="">
+                  <a
+                    href="#"
+                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
+                  >
+                    <FaArrowRight className="-rotate-45" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* 3 */}
+            <div className="max-w-full font-[var[(--font-figtree)]]">
+            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
+              <figure id="serviceImg">
+                <img src={Service1} alt="" />
+              </figure>
+              <div className="inner-service-div md:gap-7 items-center">
+                <div className="">
+                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
+                    Branding & Design
+                  </h4>
+                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
+                    Cohesive brand systems that tell your unique story. We craft
+                    logos, guidelines, and assets to define your visual voice.
+                  </p>
+                </div>
+                <div className="relative" id="serviceHiddenImage">
+                  <figure className="w-full">
+                    <img src={HomeService} alt="" className="rounded-4xl" />
+                  </figure>
+                </div>
+                <div className="">
+                  <a
+                    href="#"
+                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
+                  >
+                    <FaArrowRight className="-rotate-45" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* 4 */}
+            <div className="max-w-full font-[var[(--font-figtree)]]">
+            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
+              <figure id="serviceImg">
+                <img src={Service1} alt="" />
+              </figure>
+              <div className="inner-service-div md:gap-7 items-center">
+                <div className="">
+                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
+                    Branding & Design
+                  </h4>
+                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
+                    Cohesive brand systems that tell your unique story. We craft
+                    logos, guidelines, and assets to define your visual voice.
+                  </p>
+                </div>
+                <div className="relative" id="serviceHiddenImage">
+                  <figure className="w-full">
+                    <img src={HomeService} alt="" className="rounded-4xl" />
+                  </figure>
+                </div>
+                <div className="">
+                  <a
+                    href="#"
+                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
+                  >
+                    <FaArrowRight className="-rotate-45" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -204,6 +204,107 @@ figure {
   border-radius: 30px;
 }
 
+/* service */
+
+.services {
+  display: grid;
+  grid-template-columns: 7% 89%;
+  border-top: 1px solid #dfdfdf;
+  transition: ease-in-out 0.6s;
+  padding: 10px 0 10px 40px;
+}
+.services:hover {
+  border-top: 1px solid var(--main-color);
+  border-radius: 25px;
+  background-color: var(--main-color);
+}
+.services:hover a {
+  background: var(--white-color);
+  border: 1px solid transparent;
+}
+
+#serviceHiddenImage {
+  transition: 0.6s all;
+}
+
+.services:hover #serviceHiddenImage figure {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%);
+}
+
+#serviceHiddenImage figure {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -173px;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(0);
+  transition: 0.6s ease-in-out;
+}
+
+.services .inner-service-div {
+  display: grid;
+  grid-template-columns: 61% 24% 10%;
+}
+
+@media (max-width: 1532px) {
+  #serviceHiddenImage figure {
+    top: -143px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #serviceHiddenImage figure {
+    top: -113px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services {
+    padding: 10px 26px 10px 26px;
+  }
+
+  #serviceHiddenImage figure {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .services .inner-service-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .services:hover {
+    background-color: var(--white-color);
+    border-top: 1px solid #dfdfdf;
+    border-radius: 0px;
+  }
+  .services a:hover {
+    background: var(--main-color);
+    border: 1px solid transparent;
+  }
+
+  .services:hover a {
+    border: 1px solid black;
+  }
+}
+
+@media (max-width: 650px) {
+  #serviceImg{
+    display: none;
+  }
+
+  .services {
+	grid-template-columns: 100%;
+  }
+}
 /* ============================================ PAGES */
 
 #AboutUs-text::before {
@@ -218,36 +319,30 @@ figure {
   margin: auto;
 }
 
-
-
-#About-Stats div span{
-	font-size: 70px;
-	line-height: 70px;
-	font-weight: 700;
-	margin-bottom: 10px;
-	font-family: var(--font-figtree);
+#About-Stats div span {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: var(--font-figtree);
   color: var(--white-color);
 }
 
-#About-Stats div p{
-	margin-bottom: 0;
-	font-size: 18px;
-	line-height: 22px;
-	color: var(--white-color);
+#About-Stats div p {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--white-color);
 }
-
 
 @media (max-width: 764px) {
-  
-#About-Stats div span{
-	font-size: 50px;
-	line-height: 60px;
-}
+  #About-Stats div span {
+    font-size: 50px;
+    line-height: 60px;
+  }
 
-#About-Stats div p{
-	font-size: 16px;
-	line-height: 18px;
+  #About-Stats div p {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
-
-}
-
