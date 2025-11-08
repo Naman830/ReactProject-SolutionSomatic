@@ -4,7 +4,11 @@ import Hero1 from "../assests/images/hero-1.jpg";
 import Hero2 from "../assests/images/hero-2.jpg";
 import Hero3 from "../assests/images/hero-3.jpg";
 import Service1 from "../assests/icons/service-1.png";
-import HomeService from "../assests/images/service-home.jpg"
+import Service2 from "../assests/icons/service-2.png";
+import Service3 from "../assests/icons/service-3.png";
+import Service4 from "../assests/icons/service-4.png";
+
+import HomeService from "../assests/images/service-home.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { TalkBtn } from "../components/common/Button";
 import { AboutUs } from "../components/CommonPages/Pages";
@@ -119,19 +123,20 @@ const Home = () => {
             </div>
           </div>
           {/* 2 */}
-            <div className="max-w-full font-[var[(--font-figtree)]]">
+          <div className="max-w-full font-[var[(--font-figtree)]]">
             <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
               <figure id="serviceImg">
-                <img src={Service1} alt="" />
+                <img src={Service2} alt="" />
               </figure>
               <div className="inner-service-div md:gap-7 items-center">
                 <div className="">
                   <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
-                    Branding & Design
+                    Web Design & Development
                   </h4>
                   <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
-                    Cohesive brand systems that tell your unique story. We craft
-                    logos, guidelines, and assets to define your visual voice.
+                    Modern, responsive websites tailored to your brand & goals.
+                    We build fast, user- friendly sites that drive engagement &
+                    conversions.
                   </p>
                 </div>
                 <div className="relative" id="serviceHiddenImage">
@@ -151,19 +156,19 @@ const Home = () => {
             </div>
           </div>
           {/* 3 */}
-            <div className="max-w-full font-[var[(--font-figtree)]]">
+          <div className="max-w-full font-[var[(--font-figtree)]]">
             <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
               <figure id="serviceImg">
-                <img src={Service1} alt="" />
+                <img src={Service3} alt="" />
               </figure>
               <div className="inner-service-div md:gap-7 items-center">
                 <div className="">
                   <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
-                    Branding & Design
+                    Digital Marketing
                   </h4>
                   <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
-                    Cohesive brand systems that tell your unique story. We craft
-                    logos, guidelines, and assets to define your visual voice.
+                    Targeted strategies to grow your online presence and reach.
+                    We manage SEO, social media, PPC, and more for real results.
                   </p>
                 </div>
                 <div className="relative" id="serviceHiddenImage">
@@ -183,19 +188,20 @@ const Home = () => {
             </div>
           </div>
           {/* 4 */}
-            <div className="max-w-full font-[var[(--font-figtree)]]">
+          <div className="max-w-full font-[var[(--font-figtree)]]">
             <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
               <figure id="serviceImg">
-                <img src={Service1} alt="" />
+                <img src={Service4} alt="" />
               </figure>
               <div className="inner-service-div md:gap-7 items-center">
                 <div className="">
                   <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
-                    Branding & Design
+                    Graphic Design
                   </h4>
                   <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
-                    Cohesive brand systems that tell your unique story. We craft
-                    logos, guidelines, and assets to define your visual voice.
+                    Striking visuals that capture attention and build
+                    recognition. From logos to social content, we bring your
+                    brand to life.
                   </p>
                 </div>
                 <div className="relative" id="serviceHiddenImage">
