@@ -11,7 +11,11 @@ import Service4 from "../assests/icons/service-4.png";
 import HomeService from "../assests/images/service-home.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { TalkBtn } from "../components/common/Button";
-import { AboutUs, ProjectsCompo } from "../components/CommonPages/Pages";
+import {
+  AboutUs,
+  CtaCompo,
+  ProjectsCompo,
+} from "../components/CommonPages/Pages";
 import { ServiceCard } from "../components/Card/Card";
 
 const Home = () => {
@@ -53,7 +57,12 @@ const Home = () => {
                 solutions tailored to your business goals.
               </p>
 
-              <TalkBtn />
+              <TalkBtn
+                bg="#c2ff83"
+                color="#000000"
+                hoverbg="#000000"
+                hovercolor="white"
+              />
             </div>
           </div>
 
@@ -136,6 +145,10 @@ content, we bring your brand to life."
 
       {/* Projects */}
       <ProjectsCompo />
+
+      {/* Cta compo */}
+
+      <CtaCompo />
     </>
   );
 };

@@ -10,15 +10,20 @@ import ProjectImg3 from "../../assests/images/project-3.jpg";
 import ProjectImg4 from "../../assests/images/project-4.jpg";
 
 // BTn
-import { CommonBtn } from "../common/Button";
+import { CommonBtn, TalkBtn } from "../common/Button";
 
 // icon
 import { FaArrowRight } from "react-icons/fa";
 import { ProjectCard } from "../Card/Card";
 
+// Image
+import Halflogo from "../../assests/logos/half-logo.png";
+
 export default function PageBug() {
   return <h1 className="text-9xl">FIX BUG FROM PAGES</h1>;
 }
+
+// About us Components
 
 export function AboutUs() {
   return (
@@ -106,6 +111,8 @@ export function AboutUs() {
   );
 }
 
+// Project Components
+
 export function ProjectsCompo() {
   return (
     <section className="w-full md:py-16 py-8 bg-gray-50">
@@ -147,7 +154,7 @@ export function ProjectsCompo() {
             </div>
 
             <div className="projectDiv md:col-span-7 col-span-12">
-                <ProjectCard
+              <ProjectCard
                 projectImage={ProjectImg2}
                 projectShowcaseName1="Logo"
                 projectShowcaseName2="Strategy"
@@ -157,29 +164,77 @@ export function ProjectsCompo() {
           </div>
           <div className="grid grid-cols-12">
             <div className="projectDiv md:col-span-7 col-span-12">
-             <div className="projectDiv md:col-span-7 col-span-12">
-              <ProjectCard
-                projectImage={ProjectImg3}
-                projectShowcaseName1="Dashboard"
-                projectShowcaseName2="UIDesign"
-                showcaseHeading="Smart Dashboard Design"
-              />
-            </div>
+              <div className="projectDiv md:col-span-7 col-span-12">
+                <ProjectCard
+                  projectImage={ProjectImg3}
+                  projectShowcaseName1="Dashboard"
+                  projectShowcaseName2="UIDesign"
+                  showcaseHeading="Smart Dashboard Design"
+                />
+              </div>
             </div>
             <div className="projectDiv md:col-span-5 col-span-12">
-             <div className="projectDiv md:col-span-7 col-span-12">
-              <ProjectCard
-                projectImage={ProjectImg4}
-                projectShowcaseName1="App"
-                projectShowcaseName2="Interface"
-                showcaseHeading="Custom Mobile App"
-              />
-            </div>
+              <div className="projectDiv md:col-span-7 col-span-12">
+                <ProjectCard
+                  projectImage={ProjectImg4}
+                  projectShowcaseName1="App"
+                  projectShowcaseName2="Interface"
+                  showcaseHeading="Custom Mobile App"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+// CTA COMPONENTS
+
+export function CtaCompo() {
+  return (
+    <div className="relative py-32 bg-black w-full overflow-hidden">
+      <figure className="absolute bottom-0 right-0">
+        <img
+          src={AboutImg1}
+          alt="About us image"
+          className="lg:w-full md:w-90 w-60 scale-x-[-1]"
+        />
+      </figure>
+
+      <figure className="absolute lg:top-24 lg:right-[400px] md:top-20 md:right-64 top-0 right-36">
+        <img src={AboutImg2} alt="" />
+      </figure>
+
+      <figure className="absolute lg:bottom-24 bottom-9 lg:left-14 left-4">
+        <img src={AboutImg3} alt="" />
+      </figure>
+
+      <figure className="absolute left-0 top-14">
+        <img src={Halflogo} alt="" />
+      </figure>
+
+      <div className="AboutUs-Container lg:container mx-auto px-4  ">
+        <div className="grid grid-cols-12 items-center">
+          <div className="lg:col-span-9 col-span-12">
+            <span className="block font-[var[(--font-figtree)]] font-[800] xl:text-[144px] xl:leading-[159px] lg:text-9xl md:text-8xl sm:text-7xl text-6xl text-white lg:mb-7 mb-4">
+              PROJECT IN
+              <br />
+              <span className="block text-[var(--main-color)]">MIND?</span>
+            </span>
+
+            <p className="font-[var[(--font-sora)]] font-[400] lg:text-[20px] sm:text-[18px] text-[16px]lg:leading-[27px] sm:leading-6 leading-5 text-white max-w-[650px]">
+              Have a digital project idea you want to bring to life? Let’s
+              collaborate and turn your vision into a powerful solution.
+            </p>
+
+            <TalkBtn />
+          </div>
+          <div className="lg:col-span-3 col-span-0"></div>
+        </div>
+      </div>
+    </div>
   );
 }
 

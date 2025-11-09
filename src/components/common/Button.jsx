@@ -22,11 +22,18 @@ export function NavButton({ name }) {
   );
 }
 
-export function TalkBtn() {
+export function TalkBtn({hoverbg, hovercolor, color, bg}) {
+  const [hover, setHover] = useState();
   return (
     <div
       className="grid place-items-center bg-[var(--main-color)] text-center rounded-full md:ml-10"
       id="talk-btn"
+       style={{
+        "--btn-bg": bg,
+        "--btn-color": color,
+        "--btn-hover-bg": hoverbg,
+        "--btn-hover-color": hovercolor,
+      }}
     >
       <span className="relative z-20 font-[600] text-[16px] font-[var[(--font-figtree)]]">
         Lets
