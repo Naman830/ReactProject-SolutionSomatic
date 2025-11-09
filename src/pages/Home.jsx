@@ -17,6 +17,7 @@ import {
   ProjectsCompo,
 } from "../components/CommonPages/Pages";
 import { ServiceCard } from "../components/Card/Card";
+import Testimonial from "../components/CommonPages/Testimonial";
 
 const Home = () => {
   return (
@@ -147,8 +148,10 @@ content, we bring your brand to life."
       <ProjectsCompo />
 
       {/* Cta compo */}
-
       <CtaCompo />
+
+      {/* Testimonial section */}
+      <Testimonial />
     </>
   );
 };

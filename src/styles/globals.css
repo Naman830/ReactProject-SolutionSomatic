@@ -78,6 +78,7 @@ figure {
   }
 }
 
+
 /* Navbar */
 
 #navLinks a,
@@ -392,4 +393,16 @@ figure {
   .showcaseHeading {
     font-size: 26px;
   }
+}
+
+/* testimonial*/
+.testimonialImageHover{
+  overflow:visible !important;
+}
+.testimonialImageHover img{
+  transition: 0.6s ease-in-out;
+}
+
+.testimonialImageHover img:hover{
+  transform: translateY(-10px);
 }
