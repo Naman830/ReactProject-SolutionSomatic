@@ -9,7 +9,7 @@ export default function Footer() {
     `font-[400]  text-[14px] font-[var(--font-figtree)] transition-all leading[21] text-white
     ${isActive ? "hover:text-[var(--main-color)]" : ""}`;
   return (
-    <footer className="w-full h-full bg-black pt-16 relative px-7">
+    <footer className="w-full h-full bg-black pt-20 relative px-7">
       <div className="flex flex-row">
         <img
           src={Footerlogo}
@@ -48,6 +48,7 @@ export default function Footer() {
               </h1>
             </div>
           </div>
+
           <div className="w-full h-0.5 bg-gray-700 m-auto"></div>
 
           <div className="flex items-center justify-between text-white lg:py-10 py-8 lg:flex-row flex-col gap-4 ">

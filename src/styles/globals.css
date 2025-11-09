@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
   --main-color: #c2ff83;
   --black-color: #000000;
@@ -297,12 +298,12 @@ figure {
 }
 
 @media (max-width: 650px) {
-  #serviceImg{
+  #serviceImg {
     display: none;
   }
 
   .services {
-	grid-template-columns: 100%;
+    grid-template-columns: 100%;
   }
 }
 /* ============================================ PAGES */
@@ -346,3 +347,5 @@ figure {
     line-height: 18px;
   }
 }
+
+/* Projects */

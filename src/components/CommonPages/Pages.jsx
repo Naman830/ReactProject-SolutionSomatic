@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AboutImg1 from "../../assests/images/AboutUs-1.png";
 import AboutImg2 from "../../assests/images/AboutUs-2.png";
 import AboutImg3 from "../../assests/images/AboutUs-3.png";
@@ -11,11 +12,14 @@ export function AboutUs() {
   return (
     <div className="relative py-32 bg-black w-full overflow-hidden">
       <figure className="absolute bottom-0 left-0 ">
-        <img src={AboutImg1} alt="About us image" 
-        className="lg:w-full md:w-90 w-60"/>
+        <img
+          src={AboutImg1}
+          alt="About us image"
+          className="lg:w-full md:w-90 w-60"
+        />
       </figure>
       <figure className="absolute lg:top-32 lg:left-80 md:top-20 md:left-64 top-0 left-36">
-        <img src={AboutImg2} alt=""/>
+        <img src={AboutImg2} alt="" />
       </figure>
 
       <figure className="absolute lg:bottom-24 bottom-44 lg:right-36 right-4">
@@ -63,7 +67,10 @@ export function AboutUs() {
               <span className="text-[var(--main-color)]">Transformation</span>”
             </h3>
 
-            <div className="grid grid-cols-12 items-center lg:mx-0 lg:text-left text-center mx-auto  max-w-3xl " id="About-Stats">
+            <div
+              className="grid grid-cols-12 items-center lg:mx-0 lg:text-left text-center mx-auto  max-w-3xl "
+              id="About-Stats"
+            >
               <div className="col-span-4 border-r-[1px] border-r-white lg:mr-10">
                 <span>96</span>
                 <span>+</span>
@@ -86,3 +93,64 @@ export function AboutUs() {
     </div>
   );
 }
+
+export function ProjectsCompo() {
+  return (
+    <section className="w-full md:py-16 py-8 bg-white">
+      <div className="lg:container w-full mx-auto px-4">
+        <div className="grid grid-cols-12">
+          <div className="lg:col-span-8 col-span-12">
+            <div className="text-left">
+              <span className="font-[var[(--font-sora)]] font-[600] sm:text-[20px] text-[16px] sm:leading-6 leading-5 mb-5 block">
+                Digital Showcase
+              </span>
+              <h2 className="font-[var[(--font-figtree)]] lg:text-7xl md:text-6xl text-5xl font-[800] mb-5">
+                Our <span className="bg-[var(--main-color)]">Portfolio</span> of
+                Expert Digital Solution
+              </h2>
+            </div>
+          </div>
+          <div className="lg:col-span-4 col-span-12">
+            <div className="text-left ">
+              <p className="font-[var[(--font-sora)]] font-[400] md:text-[18px] text-16px md:leading-7 leading-6 ">
+                Explore our curated portfolio showcasing innovative digital
+                solutions. See how we bring creativity and technology together
+                to drive success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// export function CounterHover({ target = 500 }) {
+//   const [number, setNumber] = useState(0);
+
+//   const animateCount = () => {
+//     let start = 0;
+//     const increment = target / 80; // speed
+
+//     const update = () => {
+//       start += increment;
+//       if (start < target) {
+//         setNumber(Math.ceil(start));
+//         requestAnimationFrame(update);
+//       } else {
+//         setNumber(target);
+//       }
+//     };
+
+//     requestAnimationFrame(update);
+//   };
+
+//   return (
+//     <h2
+//       onMouseEnter={animateCount}
+//       className="text-5xl font-bold text-[var(--main-color)]"
+//     >
+//       {number}
+//     </h2>
+//   );
+// }

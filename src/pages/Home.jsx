@@ -11,7 +11,7 @@ import Service4 from "../assests/icons/service-4.png";
 import HomeService from "../assests/images/service-home.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { TalkBtn } from "../components/common/Button";
-import { AboutUs } from "../components/CommonPages/Pages";
+import { AboutUs, ProjectsCompo } from "../components/CommonPages/Pages";
 
 const Home = () => {
   return (
@@ -222,6 +222,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Projects */}
+      <ProjectsCompo />
     </>
   );
 };
