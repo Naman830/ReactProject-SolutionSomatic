@@ -12,6 +12,7 @@ import HomeService from "../assests/images/service-home.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { TalkBtn } from "../components/common/Button";
 import { AboutUs, ProjectsCompo } from "../components/CommonPages/Pages";
+import { ServiceCard } from "../components/Card/Card";
 
 const Home = () => {
   return (
@@ -92,133 +93,43 @@ const Home = () => {
 
           {/* 1 */}
           <div className="max-w-full font-[var[(--font-figtree)]]">
-            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
-              <figure id="serviceImg">
-                <img src={Service1} alt="" />
-              </figure>
-              <div className="inner-service-div md:gap-7 items-center">
-                <div className="">
-                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
-                    Branding & Design
-                  </h4>
-                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
-                    Cohesive brand systems that tell your unique story. We craft
-                    logos, guidelines, and assets to define your visual voice.
-                  </p>
-                </div>
-                <div className="relative" id="serviceHiddenImage">
-                  <figure className="w-full">
-                    <img src={HomeService} alt="" className="rounded-4xl" />
-                  </figure>
-                </div>
-                <div className="">
-                  <a
-                    href="#"
-                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
-                  >
-                    <FaArrowRight className="-rotate-45" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ServiceCard
+              serviceIcon={Service1}
+              serviceName="Branding & Design"
+              servicePara="Cohesive brand systems that tell your unique story. We craft logos, guidelines,
+and assets to define your visual voice."
+              serviceHiddenImage={HomeService}
+            />
           </div>
           {/* 2 */}
           <div className="max-w-full font-[var[(--font-figtree)]]">
-            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
-              <figure id="serviceImg">
-                <img src={Service2} alt="" />
-              </figure>
-              <div className="inner-service-div md:gap-7 items-center">
-                <div className="">
-                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
-                    Web Design & Development
-                  </h4>
-                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
-                    Modern, responsive websites tailored to your brand & goals.
-                    We build fast, user- friendly sites that drive engagement &
-                    conversions.
-                  </p>
-                </div>
-                <div className="relative" id="serviceHiddenImage">
-                  <figure className="w-full">
-                    <img src={HomeService} alt="" className="rounded-4xl" />
-                  </figure>
-                </div>
-                <div className="">
-                  <a
-                    href="#"
-                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
-                  >
-                    <FaArrowRight className="-rotate-45" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ServiceCard
+              serviceIcon={Service2}
+              serviceName="Web Design & Development"
+              servicePara="Modern, responsive websites tailored to your brand & goals. We build fast, user-
+friendly sites that drive engagement & conversions."
+              serviceHiddenImage={HomeService}
+            />
           </div>
           {/* 3 */}
           <div className="max-w-full font-[var[(--font-figtree)]]">
-            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
-              <figure id="serviceImg">
-                <img src={Service3} alt="" />
-              </figure>
-              <div className="inner-service-div md:gap-7 items-center">
-                <div className="">
-                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
-                    Digital Marketing
-                  </h4>
-                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
-                    Targeted strategies to grow your online presence and reach.
-                    We manage SEO, social media, PPC, and more for real results.
-                  </p>
-                </div>
-                <div className="relative" id="serviceHiddenImage">
-                  <figure className="w-full">
-                    <img src={HomeService} alt="" className="rounded-4xl" />
-                  </figure>
-                </div>
-                <div className="">
-                  <a
-                    href="#"
-                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
-                  >
-                    <FaArrowRight className="-rotate-45" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ServiceCard
+              serviceIcon={Service3}
+              serviceName="Digital Marketing"
+              servicePara="Targeted strategies to grow your online presence and reach. We manage SEO,
+social media, PPC, and more for real results."
+              serviceHiddenImage={HomeService}
+            />
           </div>
           {/* 4 */}
           <div className="max-w-full font-[var[(--font-figtree)]]">
-            <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
-              <figure id="serviceImg">
-                <img src={Service4} alt="" />
-              </figure>
-              <div className="inner-service-div md:gap-7 items-center">
-                <div className="">
-                  <h4 className="sm:text-[42px] text-[36px] sm:leading-[42px] leading-[36px] font-bold mb-4">
-                    Graphic Design
-                  </h4>
-                  <p className="text=[18px] leading-[30px] font-[var[(--font-sora)]] font-[400]">
-                    Striking visuals that capture attention and build
-                    recognition. From logos to social content, we bring your
-                    brand to life.
-                  </p>
-                </div>
-                <div className="relative" id="serviceHiddenImage">
-                  <figure className="w-full">
-                    <img src={HomeService} alt="" className="rounded-4xl" />
-                  </figure>
-                </div>
-                <div className="">
-                  <a
-                    href="#"
-                    className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
-                  >
-                    <FaArrowRight className="-rotate-45" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ServiceCard
+              serviceIcon={Service4}
+              serviceName="Graphic Design"
+              servicePara="Striking visuals that capture attention and build recognition. From logos to social
+content, we bring your brand to life."
+              serviceHiddenImage={HomeService}
+            />
           </div>
         </div>
       </section>

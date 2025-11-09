@@ -1,8 +1,20 @@
 import { useState } from "react";
+// About us
 import AboutImg1 from "../../assests/images/AboutUs-1.png";
 import AboutImg2 from "../../assests/images/AboutUs-2.png";
 import AboutImg3 from "../../assests/images/AboutUs-3.png";
+// Projects
+import ProjectImg1 from "../../assests/images/project-1.jpg";
+import ProjectImg2 from "../../assests/images/project-2.jpg";
+import ProjectImg3 from "../../assests/images/project-3.jpg";
+import ProjectImg4 from "../../assests/images/project-4.jpg";
+
+// BTn
 import { CommonBtn } from "../common/Button";
+
+// icon
+import { FaArrowRight } from "react-icons/fa";
+import { ProjectCard } from "../Card/Card";
 
 export default function PageBug() {
   return <h1 className="text-9xl">FIX BUG FROM PAGES</h1>;
@@ -96,9 +108,9 @@ export function AboutUs() {
 
 export function ProjectsCompo() {
   return (
-    <section className="w-full md:py-16 py-8 bg-white">
+    <section className="w-full md:py-16 py-8 bg-gray-50">
       <div className="lg:container w-full mx-auto px-4">
-        <div className="grid grid-cols-12">
+        <div className="grid grid-cols-12 mb-12">
           <div className="lg:col-span-8 col-span-12">
             <div className="text-left">
               <span className="font-[var[(--font-sora)]] font-[600] sm:text-[20px] text-[16px] sm:leading-6 leading-5 mb-5 block">
@@ -117,6 +129,52 @@ export function ProjectsCompo() {
                 solutions. See how we bring creativity and technology together
                 to drive success.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Part-2 */}
+
+        <div className="flex flex-col items-center justify-center">
+          <div className="grid grid-cols-12">
+            <div className="projectDiv md:col-span-5 col-span-12">
+              <ProjectCard
+                projectImage={ProjectImg1}
+                projectShowcaseName1="Responsive"
+                projectShowcaseName2="Design"
+                showcaseHeading="Innovative Website Design"
+              />
+            </div>
+
+            <div className="projectDiv md:col-span-7 col-span-12">
+                <ProjectCard
+                projectImage={ProjectImg2}
+                projectShowcaseName1="Logo"
+                projectShowcaseName2="Strategy"
+                showcaseHeading="Brand Identity Makeover"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-12">
+            <div className="projectDiv md:col-span-7 col-span-12">
+             <div className="projectDiv md:col-span-7 col-span-12">
+              <ProjectCard
+                projectImage={ProjectImg3}
+                projectShowcaseName1="Dashboard"
+                projectShowcaseName2="UIDesign"
+                showcaseHeading="Smart Dashboard Design"
+              />
+            </div>
+            </div>
+            <div className="projectDiv md:col-span-5 col-span-12">
+             <div className="projectDiv md:col-span-7 col-span-12">
+              <ProjectCard
+                projectImage={ProjectImg4}
+                projectShowcaseName1="App"
+                projectShowcaseName2="Interface"
+                showcaseHeading="Custom Mobile App"
+              />
+            </div>
             </div>
           </div>
         </div>

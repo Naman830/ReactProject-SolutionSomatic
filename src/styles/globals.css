@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   --main-color: #c2ff83;
   --black-color: #000000;
@@ -349,3 +348,48 @@ figure {
 }
 
 /* Projects */
+
+.projectDiv div figure {
+  border-radius: 35px;
+  margin-bottom: 14px;
+}
+
+.projectDiv div figure img {
+  transition: ease-in-out 1s;
+}
+
+.projectDiv div figure:hover img {
+  transform: scale(1.02);
+  border-radius: 35px;
+}
+
+.projectShocaseName {
+  background-color: var(--white-color);
+  color: var(--primary--color);
+  padding: 5px 21px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.showcaseHeading {
+  font-family: var(--font-figtree);
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 34px;
+}
+
+.projectDiv:hover .projectArrow{
+  background: var(--main-color);
+  border: 2px solid transparent;
+}
+
+@media (max-width: 1024px) {
+  .showcaseHeading{
+    font-size: 26px;
+  }
+}
