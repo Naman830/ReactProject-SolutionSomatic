@@ -47,7 +47,7 @@ const Testimonial = () => {
               </figure>
             </div>
           </div>
-          <div className="xl:col-span-7 lg:col-span-6 col-span-12 lg:text-left text-center">
+          <div className="xl:col-span-7 lg:col-span-6 col-span-12 lg:text-left lg:px-0 px-10 text-center">
             <div>
               <span className="block font-[var[(--font-sora)]] font-[600] md:text-[20px] text-[16px] md:leading-6 leading-4 mb-4 text-black">
                 Testimonial

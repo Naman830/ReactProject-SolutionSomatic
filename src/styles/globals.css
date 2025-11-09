@@ -406,3 +406,32 @@ figure {
 .testimonialImageHover img:hover{
   transform: translateY(-10px);
 }
+
+/* sliders */
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: var(--swiper-pagination-bottom, 8px);
+	top: var(--swiper-pagination-top, auto);
+	left: 0px;
+	width: 100%;
+}
+
+.swiper-pagination {
+	position: absolute;
+	text-align: right;
+	transition: 300ms opacity;
+	transform: translate3d(0, 0, 0);
+	z-index: 10;
+}
+
+.swiper-pagination-bullet {
+	background: var(--main-color);
+  border-radius: 0px;
+  width: 30px;
+  height: 6px;
+}
+
+@media (max-width: 580px) {
+  .swiper-pagination-bullet{
+    display: none;
+  }
+}

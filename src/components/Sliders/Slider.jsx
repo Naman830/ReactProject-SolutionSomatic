@@ -31,7 +31,6 @@ export default function App() {
 solving skills. They didn’t just build a website; they built a digital experience
 that reflects our vision. The project was delivered on time, within budget, and
 has already generated measurable results for our business."
-
             name="Andrew"
             occupation="Digital Marketing Manager"
             star={5}
@@ -40,48 +39,40 @@ has already generated measurable results for our business."
 
         {/* SLIDE 2 */}
         <SwiperSlide>
-          <div className="p-6 max-w-lg text-left">
-            <p className="text-gray-700 text-[16px] leading-relaxed mb-4">
-              Amazing service. They deliver on time and are super responsive in
-              communication. Highly recommended.
-            </p>
-
-            <div className="flex gap-1 mb-3">
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl opacity-40">★</span>
-            </div>
-
-            <h3 className="font-semibold text-[18px] text-black">
-              Sarah Mitchell
-            </h3>
-            <p className="text-gray-500 text-[14px]">Marketing Specialist</p>
-          </div>
+          <SliderTestimonial
+            paragraph="Working with them felt effortless. They understood our goals instantly and delivered a clean, high-performing website that boosted our engagement within weeks. Their communication was clear, and every feature was implemented with precision and care"
+            name="Sarah Mitchell"
+            occupation="Brand Strategist"
+            star={4.5}
+          />
         </SwiperSlide>
 
         {/* SLIDE 3 */}
         <SwiperSlide>
-          <div className="p-6 max-w-lg text-left">
-            <p className="text-gray-700 text-[16px] leading-relaxed mb-4">
-              If you want quality work without drama, just hire them. They
-              exceeded expectations.
-            </p>
+         <SliderTestimonial
+            paragraph="They don’t just take instructions—they think. They suggested smart improvements that increased conversions and made our website faster and easier to manage. Their attention to detail and marketing mindset set them apart from other developers we’ve worked with"
+            name="Jonathan Reed"
+            occupation="E-Commerce Founder"
+            star={5}
+          />
+        </SwiperSlide>
 
-            <div className="flex gap-1 mb-3">
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl">★</span>
-              <span className="text-yellow-400 text-xl">★</span>
-            </div>
-
-            <h3 className="font-semibold text-[18px] text-black">
-              Emily Taylor
-            </h3>
-            <p className="text-gray-500 text-[14px]">Business Owner</p>
-          </div>
+        <SwiperSlide>
+         <SliderTestimonial
+            paragraph="Our old website was slow, outdated, and hurting our credibility. After their redesign, everything changed. The site loads faster, ranks better, and users actually stay longer. We’ve already seen a noticeable increase in inquiries from the new website."
+            name="Priya Sharma"
+            occupation="Business Development Head"
+            star={4}
+          />
+        </SwiperSlide>
+        
+        <SwiperSlide>
+         <SliderTestimonial
+            paragraph="hey took the time to understand our business and our audience. The final result wasn’t just a website—it became a storytelling platform for our brand. Their creativity and strategic thinking are unmatched. I’d trust them with any future project"
+            name="Marcus Allen"
+            occupation="Creative Director"
+            star={5}
+          />
         </SwiperSlide>
       </Swiper>
     </>

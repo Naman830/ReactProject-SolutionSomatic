@@ -16,25 +16,32 @@ export default function SliderTestimonial({
     let hasHalfStar = safeTotalStar % 1 !== 0;
 
     for (let i = 0; i < fullStars; i++) {
-        stars.push(<FaStar key={`full-${i}`} className="text-yellow-400 text-xl" />)
+      stars.push(
+        <FaStar key={`full-${i}`} className="text-yellow-400 text-xl" />
+      );
     }
 
     if (hasHalfStar) {
-          stars.push(<FaStarHalfAlt key="half" className="text-yellow-400 text-xl" />);
+      stars.push(
+        <FaStarHalfAlt key="half" className="text-yellow-400 text-xl" />
+      );
     }
 
     while (stars.length < totalStars) {
-        stars.push(
-              <FaRegStar key={`empty-${stars.length}`} className="text-yellow-400 text-xl" />
-        )
+      stars.push(
+        <FaRegStar
+          key={`empty-${stars.length}`}
+          className="text-yellow-400 text-xl"
+        />
+      );
     }
 
-    return stars
+    return stars;
   }
 
   return (
-    <div className="mt-5 max-w-full text-left ">
-      <p className="font-[var[(--font-sora)]] font-[400] md:text-[18px] md:leading-7 text-[16px] leading-6 text-black max-w-2xl">
+    <div className="mt-5 md:max-w-full lg:px-0 px-10 text-left ">
+      <p className="font-[var[(--font-sora)]] font-[400] md:text-[18px] md:leading-7 text-[16px] leading-6 text-black max-w-2xl mb-5">
         "{paragraph}"
       </p>
 
