@@ -215,21 +215,28 @@ export function CtaCompo() {
         <img src={Halflogo} alt="" />
       </figure>
 
-      <div className="AboutUs-Container lg:container mx-auto px-4  ">
+      <div className="AboutUs-Container lg:container mx-auto px-4 lg:text-left text-center ">
         <div className="grid grid-cols-12 items-center">
-          <div className="lg:col-span-9 col-span-12">
+          <div className="lg:col-span-9 col-span-12 relative">
             <span className="block font-[var[(--font-figtree)]] font-[800] xl:text-[144px] xl:leading-[159px] lg:text-9xl md:text-8xl sm:text-7xl text-6xl text-white lg:mb-7 mb-4">
               PROJECT IN
               <br />
               <span className="block text-[var(--main-color)]">MIND?</span>
             </span>
 
-            <p className="font-[var[(--font-sora)]] font-[400] lg:text-[20px] sm:text-[18px] text-[16px]lg:leading-[27px] sm:leading-6 leading-5 text-white max-w-[650px]">
+            <p className="font-[var[(--font-sora)]] font-[400] lg:text-[20px] sm:text-[18px] text-[16px]lg:leading-[27px] sm:leading-6 leading-5 text-white max-w-[650px] inline">
               Have a digital project idea you want to bring to life? Let’s
               collaborate and turn your vision into a powerful solution.
             </p>
 
-            <TalkBtn />
+            <div className="xl:absolute xl:right-[23.5%] xl:bottom-[14%] xl:ml-0 xl:mt-0 mt-5 lg:block flex justify-center items-center -ml-10">
+              <TalkBtn
+                bg="#c2ff83"
+                color="#000000"
+                hoverbg="white"
+                hovercolor="black"
+              />
+            </div>
           </div>
           <div className="lg:col-span-3 col-span-0"></div>
         </div>
