@@ -151,7 +151,6 @@ figure {
   margin: auto;
 }
 
-
 @media (max-width: 550px) {
   .hero-1-figure {
     display: none;
@@ -304,51 +303,21 @@ figure {
 }
 
 @media (max-width: 764px) {
-  #About-Stats div span {
-    font-size: 50px;
-    line-height: 60px;
-  }
-
   #About-Stats div p {
     font-size: 16px;
     line-height: 18px;
   }
 }
 
-/* Projects */
+/* Common Project */
 
-.projectDiv div figure {
-  border-radius: 35px;
-  margin-bottom: 14px;
-}
-
-.projectDiv div figure img {
+#projectCard figure img {
   transition: ease-in-out 1s;
 }
 
-.projectDiv div figure:hover img {
+#projectCard figure:hover img {
   transform: scale(1.02);
   border-radius: 35px;
-}
-
-.projectShocaseName {
-  background-color: var(--white-color);
-  color: var(--primary--color);
-  padding: 5px 21px;
-  border-radius: 15px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  margin-bottom: 14px;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.showcaseHeading {
-  font-family: var(--font-figtree);
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 34px;
 }
 
 .projectDiv:hover .projectArrow {
@@ -356,11 +325,6 @@ figure {
   border: 2px solid transparent;
 }
 
-@media (max-width: 1024px) {
-  .showcaseHeading {
-    font-size: 26px;
-  }
-}
 
 /* testimonial*/
 .testimonialImageHover {

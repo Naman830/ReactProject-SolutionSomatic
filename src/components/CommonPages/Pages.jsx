@@ -167,24 +167,20 @@ export function ProjectsComponent() {
           </div>
           <div className="grid grid-cols-12">
             <div className="projectDiv md:col-span-7 col-span-12">
-              <div className="projectDiv md:col-span-7 col-span-12">
                 <ProjectCard
                   projectImage={ProjectImg3}
                   projectShowcaseName1="Dashboard"
                   projectShowcaseName2="UIDesign"
                   showcaseHeading="Smart Dashboard Design"
                 />
-              </div>
             </div>
             <div className="projectDiv md:col-span-5 col-span-12">
-              <div className="projectDiv md:col-span-7 col-span-12">
                 <ProjectCard
                   projectImage={ProjectImg4}
                   projectShowcaseName1="App"
                   projectShowcaseName2="Interface"
                   showcaseHeading="Custom Mobile App"
                 />
-              </div>
             </div>
           </div>
         </div>
@@ -286,32 +282,4 @@ export function BlogComponent() {
   );
 }
 
-// export function CounterHover({ target = 500 }) {
-//   const [number, setNumber] = useState(0);
 
-//   const animateCount = () => {
-//     let start = 0;
-//     const increment = target / 80; // speed
-
-//     const update = () => {
-//       start += increment;
-//       if (start < target) {
-//         setNumber(Math.ceil(start));
-//         requestAnimationFrame(update);
-//       } else {
-//         setNumber(target);
-//       }
-//     };
-
-//     requestAnimationFrame(update);
-//   };
-
-//   return (
-//     <h2
-//       onMouseEnter={animateCount}
-//       className="text-5xl font-bold text-[var(--main-color)]"
-//     >
-//       {number}
-//     </h2>
-//   );
-// }

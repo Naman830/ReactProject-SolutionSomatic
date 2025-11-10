@@ -56,16 +56,16 @@ export function ProjectCard({
   projectImage,
 }) {
   return (
-    <div className="float-left sm:p-10 p-4">
-      <figure>
+    <div className="float-left sm:p-10 p-4" id="projectCard">
+      <figure className="rounded-[35px] mb-3.5">
         <img src={projectImage} alt="" />
       </figure>
 
       <div className="flex items-center justify-between">
         <div className=" inline">
-          <span className="projectShocaseName">{projectShowcaseName1}</span>
-          <span className="projectShocaseName">{projectShowcaseName2}</span>
-          <h5 className="showcaseHeading">{showcaseHeading}</h5>
+          <span className="bg-white text-black py-1.5 px-5 rounded-2xl text-[14px] leading-5 font-[500] mb-3.5 inline ">{projectShowcaseName1}</span>
+          <span className="bg-white text-black py-1.5 px-5 rounded-2xl text-[14px] leading-5 font-[500] mb-3.5 inline ml-2.5 ">{projectShowcaseName2}</span>
+          <h5 className="font-[var[(--font-figtree)]] font-[700] lg:text-4xl text-3xl mt-2">{showcaseHeading}</h5>
         </div>
         <a
           href="#"
