@@ -1,10 +1,12 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { CommonBtn } from "../common/Button";
 
 export default function DefaultCard() {
   return <h1>Default card check error in Card.jsx</h1>;
 }
 
+// Service card
 export function ServiceCard({
   serviceIcon,
   serviceName,
@@ -43,6 +45,7 @@ export function ServiceCard({
   );
 }
 
+// Project Card
 export function ProjectCard({
   projectShowcaseName1,
   projectShowcaseName2,
@@ -67,6 +70,37 @@ export function ProjectCard({
         >
           <FaArrowRight className="-rotate-45" />
         </a>
+      </div>
+    </div>
+  );
+}
+
+// Blog Card
+export function BlogCard({ BlogImage, BlogDate, BlogName }) {
+  return (
+    <div className="w-full rounded-4xl bg-white xl:p-6 p-4">
+      <figure className="BlogFigure rounded-3xl mb-3.5 ">
+        <img src={BlogImage} alt="BlogImage" className="rounded-3xl" />
+      </figure>
+
+      <div className="px-3 ">
+        <span className="block text-[16px] leading-6 font-[400] text-[#aaa] mb-2">
+          {BlogDate}
+        </span>
+        <a
+          href=""
+          className="font=[var[(--font-sora)]] md:text-[24px] text-[20px] md:leading-7 leading-6 font-[600] mb-4 block hover:underline"
+        >
+          {" "}
+          {BlogName}
+        </a>
+        <CommonBtn
+          name={"Read More"}
+          border="2px solid black"
+          color="black"
+          hoverBorder="2px solid transparent"
+          hoverColor="black"
+        />
       </div>
     </div>
   );

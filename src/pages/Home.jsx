@@ -13,8 +13,9 @@ import { FaArrowRight } from "react-icons/fa";
 import { TalkBtn } from "../components/common/Button";
 import {
   AboutUs,
-  CtaCompo,
-  ProjectsCompo,
+  BlogComponent,
+  CtaComponent,
+  ProjectsComponent,
 } from "../components/CommonPages/Pages";
 import { ServiceCard } from "../components/Card/Card";
 import Testimonial from "../components/CommonPages/Testimonial";
@@ -145,13 +146,16 @@ content, we bring your brand to life."
       </section>
 
       {/* Projects */}
-      <ProjectsCompo />
+      <ProjectsComponent />
 
       {/* Cta compo */}
-      <CtaCompo />
+      <CtaComponent />
 
       {/* Testimonial section */}
       <Testimonial />
+
+      {/* Blog Componets */}
+      <BlogComponent />
     </>
   );
 };

@@ -53,7 +53,7 @@ has already generated measurable results for our business."
             paragraph="They don’t just take instructions—they think. They suggested smart improvements that increased conversions and made our website faster and easier to manage. Their attention to detail and marketing mindset set them apart from other developers we’ve worked with"
             name="Jonathan Reed"
             occupation="E-Commerce Founder"
-            star={5}
+            star={1.5}
           />
         </SwiperSlide>
 

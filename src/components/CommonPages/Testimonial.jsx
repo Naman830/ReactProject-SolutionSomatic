@@ -8,7 +8,7 @@ import TestimonialSlider from "../Sliders/Slider";
 
 const Testimonial = () => {
   return (
-    <section className="w-full md:py-32 py-8 bg-[#f4fbef]">
+    <section className="w-full md:py-32 py-8 bg-white">
       <div className="lg:container w-full mx-auto px-4">
         <div className="grid grid-cols-12">
           <div className="xl:col-span-5 lg:col-span-6 col-span-12 lg:inline flex items-center justify-center">
@@ -30,7 +30,7 @@ const Testimonial = () => {
                 <img src={TestiImage2} alt="" />
               </figure>
 
-              <figure className="testimonialImageHover absolute -bottom-8 left-[60px]  lg:w-auto w-20 h-20">
+              <figure className="testimonialImageHover absolute -bottom-4 left-[60px]  lg:w-auto w-20 h-20">
                 <img src={TestiImage3} alt="" />
               </figure>
 

@@ -9,12 +9,21 @@ import ProjectImg2 from "../../assests/images/project-2.jpg";
 import ProjectImg3 from "../../assests/images/project-3.jpg";
 import ProjectImg4 from "../../assests/images/project-4.jpg";
 
+// Blog
+
+import Blog1 from "../../assests/images/Blog-1.jpg";
+import Blog2 from "../../assests/images/Blog-2.jpg";
+import Blog3 from "../../assests/images/Blog-3.jpg";
+
+
+
+
 // BTn
 import { CommonBtn, TalkBtn } from "../common/Button";
 
 // icon
 import { FaArrowRight } from "react-icons/fa";
-import { ProjectCard } from "../Card/Card";
+import { BlogCard, ProjectCard } from "../Card/Card";
 
 // Image
 import Halflogo from "../../assests/logos/half-logo.png";
@@ -24,7 +33,6 @@ export default function PageBug() {
 }
 
 // About us Components
-
 export function AboutUs() {
   return (
     <div className="relative py-32 bg-black w-full overflow-hidden">
@@ -112,8 +120,7 @@ export function AboutUs() {
 }
 
 // Project Components
-
-export function ProjectsCompo() {
+export function ProjectsComponent() {
   return (
     <section className="w-full md:py-16 py-8 bg-gray-50">
       <div className="lg:container w-full mx-auto px-4">
@@ -191,8 +198,7 @@ export function ProjectsCompo() {
 }
 
 // CTA COMPONENTS
-
-export function CtaCompo() {
+export function CtaComponent() {
   return (
     <div className="relative py-32 bg-black w-full overflow-hidden">
       <figure className="absolute bottom-0 right-0">
@@ -242,6 +248,45 @@ export function CtaCompo() {
         </div>
       </div>
     </div>
+  );
+}
+
+// Blog COMPONENTS
+export function BlogComponent() {
+  return (
+    <section className="w-full md:py-16 py-8 bg-[#F9F9F9]">
+      <div className="lg:container w-full mx-auto px-4">
+        <div className="text-center max-w-4xl mx-auto md:mb-8 mb-6">
+          <span className="font-[var[(--font-sora)]] font-[600] lg:text-[20px] lg:leading-5 text-[18px] leading-4 block lg:mb-5 mb-3">Latest Blog</span>
+          <h2 className="font-[var[(--font-figtree)]] font-[800] xl:text-7xl md:text-6xl text-5xl  ">Stay Updated with Our Digital Solutions  <span className="bg-[var(--main-color)]">Blog</span></h2>
+        </div>
+
+        <div className="grid grid-cols-12 gap-6">
+          <div className="lg:col-span-4 col-span-6">
+            <BlogCard 
+            BlogImage={Blog1}
+            BlogDate="By Admin | Nov 10, 2025"
+            BlogName="The Future of Web Design: Trends to Watch in 2025"
+            />
+          </div>
+          <div className="lg:col-span-4 col-span-6">
+            <BlogCard 
+             BlogImage={Blog2}
+            BlogDate="By Admin | Nov 10, 2025"
+            BlogName="The Future of Web Design: Trends to Watch in 2025"
+            />
+          </div>
+          <div className="lg:col-span-4 col-span-6">
+            <BlogCard 
+             BlogImage={Blog3}
+            BlogDate="By Admin | Nov 10, 2025"
+            BlogName="The Future of Web Design: Trends to Watch in 2025"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
   );
 }
 
