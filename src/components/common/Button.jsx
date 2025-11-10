@@ -1,16 +1,25 @@
+// Reacr
 import { useState } from "react";
-import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
+// Icons
+import { FaArrowRight } from "react-icons/fa";
+
+
+
+
+// Default
 export default function Button() {
   return <button>Fix bug</button>;
 }
 
-export function NavButton({ name }) {
+// Contact Button
+export function ContactBtn({ name }) {
   return (
     <>
       <button
         className="bg-transparent border outline-none border-black rounded-full py-3.5 px-7 flex items-center gap-2 hover:bg-[var(--main-color)] hover:border-transparent transition-all
+        font-[600] text-[14px] leading-4
         "
         style={{ fontFamily: "var(--font-sora)" }}
         id="nav-btn"
@@ -22,11 +31,13 @@ export function NavButton({ name }) {
   );
 }
 
+// TalkBtn
 export function TalkBtn({hoverbg, hovercolor, color, bg}) {
-  const [hover, setHover] = useState();
   return (
     <div
-      className="grid place-items-center bg-[var(--main-color)] text-center rounded-full md:ml-10"
+      className="grid place-items-center bg-[var(--main-color)] text-center rounded-full md:ml-10
+      md:w-[172px] md:h-[172px] w-140px h-140px relative z-50
+      "
       id="talk-btn"
        style={{
         "--btn-bg": bg,
@@ -47,12 +58,15 @@ export function TalkBtn({hoverbg, hovercolor, color, bg}) {
   );
 }
 
+
+// CommonBtn Like Learn More or Read More
 export function CommonBtn({ border, color, name, hoverColor, hoverBorder }) {
   const [hover, setHover] = useState();
   return (
     <>
       <button
         className="bg-transparent outline-none rounded-full text-center flex items-center justify-center gap-2 hover:bg-[var(--main-color)] transition-all
+        font-[600] text-[14px] leading-4
         "
         style={{
           fontFamily: "var(--font-sora)",

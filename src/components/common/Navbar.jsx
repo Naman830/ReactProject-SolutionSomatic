@@ -7,7 +7,7 @@ import { useState } from "react";
 import logo from "../../assests/logos/logo.png";
 
 // Import
-import {NavButton} from "./Button";
+import { ContactBtn } from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +24,18 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center justify-between py-4  2xl:px-52 xl:px-36 lg:px-20 px-6 fixed min-w-full z-[1000] bg-white">
+      {/* logo */}
       <div id="logo">
         <Link to="/">
           <img src={logo} alt="logo" className="img-fluid" />
         </Link>
       </div>
-      <div className="flex items-center justify-center xl:gap-16 gap-12 " id="navLinks">
+
+      {/* Navlinks */}
+      <div
+        className="flex items-center justify-center xl:gap-16 gap-12 "
+        id="navLinks"
+      >
         <NavLink to="/" className={navLinkClass}>
           Home
         </NavLink>
@@ -49,10 +55,12 @@ export default function Navbar() {
           Projects
         </NavLink>
       </div>
-      <div className="flex items-center justify-center gap-2.5">
-        <NavButton name="Contact us" />
 
-        <div className="lg:hidden block"  id="menu">
+      {/* Menu and Button */}
+      <div className="flex items-center justify-center gap-2.5">
+        <ContactBtn name="Contact us" />
+
+        <div className="lg:hidden block" id="menu">
           <Hamburger
             toggled={isOpen}
             toggle={setIsOpen}
