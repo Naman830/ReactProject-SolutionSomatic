@@ -3,11 +3,14 @@ import { FaArrowRight } from "react-icons/fa";
 
 // Imports 
 import { CommonBtn } from "../common/Button";
+import { Link } from "react-router-dom";
 
 // Default
 export default function DefaultCard() {
   return <h1>Default card check error in Card.jsx</h1>;
 }
+
+
 
 // Service card
 export function ServiceCard({
@@ -17,8 +20,10 @@ export function ServiceCard({
   serviceHiddenImage,
 }) {
   return (
-    <div className="services xl:h-56 lg:h-44 gap-5 items-center relative">
-      <figure id="serviceImg">
+    <div className="services xl:h-56 lg:h-44 gap-5 items-center relative border-t-[1px] border-[#dfdfdf]
+    xl:py-2.5 xl:pl-10 py-5 px-2.5 hover:rounded-3xl hover:bg-[var(--main-color)] hover:border-[var[(--main-color)]]
+    ">
+      <figure id="serviceImg" className="sm:block hidden">
         <img src={serviceIcon} alt="" />
       </figure>
       <div className="inner-service-div md:gap-7 items-center">
@@ -31,17 +36,21 @@ export function ServiceCard({
           </p>
         </div>
         <div className="relative" id="serviceHiddenImage">
-          <figure className="w-full">
+          <figure className="w-full opacity-0 invisible z-10  absolute
+          2xl:-top-44 2xl:left-2/4 lg:block hidden
+          ">
             <img src={serviceHiddenImage} alt="" className="rounded-4xl" />
           </figure>
         </div>
         <div className="">
-          <a
+          <Link
+          to="/projects"
             href="#"
-            className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
+            className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400] 
+            "
           >
             <FaArrowRight className="-rotate-45" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -168,107 +168,6 @@ figure {
 /* ============================================================================================  */
 /* ============================================================================================  */
 
-/* service */
-
-.services {
-  display: grid;
-  grid-template-columns: 7% 89%;
-  border-top: 1px solid #dfdfdf;
-  transition: ease-in-out 0.6s;
-  padding: 10px 0 10px 40px;
-}
-.services:hover {
-  border-top: 1px solid var(--main-color);
-  border-radius: 25px;
-  background-color: var(--main-color);
-}
-.services:hover a {
-  background: var(--white-color);
-  border: 1px solid transparent;
-}
-
-#serviceHiddenImage {
-  transition: 0.6s all;
-}
-
-.services:hover #serviceHiddenImage figure {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%);
-}
-
-#serviceHiddenImage figure {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: -173px;
-  left: 50%;
-  z-index: 10;
-  transform: translateX(0);
-  transition: 0.6s ease-in-out;
-}
-
-.services .inner-service-div {
-  display: grid;
-  grid-template-columns: 61% 24% 10%;
-}
-
-@media (max-width: 1532px) {
-  #serviceHiddenImage figure {
-    top: -143px;
-    left: 50%;
-  }
-}
-
-@media (max-width: 1280px) {
-  #serviceHiddenImage figure {
-    top: -113px;
-    left: 50%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .services {
-    padding: 10px 26px 10px 26px;
-  }
-
-  #serviceHiddenImage figure {
-    display: none;
-  }
-}
-
-@media (max-width: 740px) {
-  .services .inner-service-div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: start;
-  }
-
-  .services:hover {
-    background-color: var(--white-color);
-    border-top: 1px solid #dfdfdf;
-    border-radius: 0px;
-  }
-  .services a:hover {
-    background: var(--main-color);
-    border: 1px solid transparent;
-  }
-
-  .services:hover a {
-    border: 1px solid black;
-  }
-}
-
-@media (max-width: 650px) {
-  #serviceImg {
-    display: none;
-  }
-
-  .services {
-    grid-template-columns: 100%;
-  }
-}
 /* ============================================================================================  */
 /* ============================================================================================  */
 /* Common all Pages */
@@ -326,6 +225,8 @@ figure {
 }
 
 
+
+
 /* testimonial*/
 .testimonialImageHover {
   overflow: visible !important;
@@ -370,17 +271,6 @@ figure {
   }
 }
 
-/* Blog card*/
-
-.BlogFigure img {
-  transition: 0.6s ease-in-out;
-  border-radius: 24px;
-}
-
-.BlogFigure img:hover {
-  transform: scale(1.02);
-  border-radius: 24px;
-}
 
 /* newsletter */
 
@@ -418,4 +308,93 @@ figure {
   overflow: visible;
   outline: none;
   transition: all 0.6s ease-in-out;
+}
+
+/* ============================================================================================  */
+/* ============================================================================================  */
+/* Cards */
+
+
+/* Service Card*/
+
+.services {
+  display: grid;
+  grid-template-columns: 7% 89%;
+  transition: ease-in-out 0.3s;
+}
+
+.services .inner-service-div {
+  display: grid;
+  grid-template-columns: 61% 24% 10%;
+}
+
+.services:hover a {
+  background: var(--white-color);
+  border: 1px solid transparent;
+}
+
+#serviceHiddenImage {
+  transition: 0.6s all;
+}
+
+#serviceHiddenImage figure {
+  transform: translateX(0);
+  transition: 0.6s ease-in-out;
+}
+.services:hover #serviceHiddenImage figure {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1532px) {
+  #serviceHiddenImage figure {
+    top: -143px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #serviceHiddenImage figure {
+    top: -113px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 740px) {
+  .services .inner-service-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .services:hover {
+    background-color: var(--white-color) !important;
+    border-top: 1px solid #dfdfdf !important;
+    border-radius: 0px !important;
+  }
+  .services:hover a {
+    background: var(--main-color) !important;
+    border: 1px solid transparent !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .services {
+    grid-template-columns: 100%;
+  }
+}
+
+
+
+/* Blog card*/
+.BlogFigure img {
+  transition: 0.6s ease-in-out;
+  border-radius: 24px;
+}
+
+.BlogFigure img:hover {
+  transform: scale(1.02);
+  border-radius: 24px;
 }
