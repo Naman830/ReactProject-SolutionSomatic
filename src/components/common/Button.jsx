@@ -14,7 +14,8 @@ export default function Button() {
 export function ContactBtn({ name }) {
   return (
     <>
-      <button
+      <Link
+      to="/about"
         className="bg-transparent border outline-none border-black rounded-full py-3.5 px-7 flex items-center gap-2 hover:bg-[var(--main-color)] hover:border-transparent transition-all
         font-[600] text-[14px] leading-4
         "
@@ -23,7 +24,7 @@ export function ContactBtn({ name }) {
       >
         {name}
         <FaArrowRight className="-rotate-45" />
-      </button>
+      </Link>
     </>
   );
 }
@@ -57,6 +58,9 @@ export function TalkBtn({ hoverbg, hovercolor, color, bg }) {
 
 // CommonBtn Like Learn More or Read More
 export function CommonBtn({ border, color, name, hoverColor, hoverBorder }) {
+  
+
+
   const [hover, setHover] = useState();
   return (
     <>

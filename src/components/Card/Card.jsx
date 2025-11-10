@@ -76,12 +76,13 @@ export function ProjectCard({
           <span className="bg-white text-black py-1.5 px-5 rounded-2xl text-[14px] leading-5 font-[500] mb-3.5 inline ml-2.5 ">{projectShowcaseName2}</span>
           <h5 className="font-[var[(--font-figtree)]] font-[700] lg:text-4xl text-3xl mt-2">{showcaseHeading}</h5>
         </div>
-        <a
+        <Link
+        to="/projects"
           href="#"
           className="projectArrow  lg:h-16 lg:min-w-16 md:h-14 md:min-w-14 h-10 min-w-10 inline-flex items-center justify-center md:text-2xl text-[16px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
         >
           <FaArrowRight className="-rotate-45" />
-        </a>
+        </Link>
       </div>
     </div>
   );
