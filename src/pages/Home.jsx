@@ -19,6 +19,7 @@ import {
 } from "../components/CommonPages/Pages";
 import { ServiceCard } from "../components/Card/Card";
 import Testimonial from "../components/CommonPages/Testimonial";
+import Newsletter from "../components/common/Newsletter";
 
 const Home = () => {
   return (
@@ -156,6 +157,9 @@ content, we bring your brand to life."
 
       {/* Blog Componets */}
       <BlogComponent />
+
+      {/* NewsLetter */}
+      <Newsletter />
     </>
   );
 };

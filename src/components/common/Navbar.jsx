@@ -1,8 +1,12 @@
+// React
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assests/logos/logo.png";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import { IoClose } from "react-icons/io5";
+
+// Logo
+import logo from "../../assests/logos/logo.png";
+
+// Import
 import {NavButton} from "./Button";
 
 export default function Navbar() {
@@ -19,13 +23,13 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="flex items-center justify-between py-4 px-64 fixed min-w-full z-[1000] bg-white">
+    <nav className="flex items-center justify-between py-4  2xl:px-52 xl:px-36 lg:px-20 px-6 fixed min-w-full z-[1000] bg-white">
       <div id="logo">
         <Link to="/">
           <img src={logo} alt="logo" className="img-fluid" />
         </Link>
       </div>
-      <div className="flex items-center justify-center gap-16" id="navLinks">
+      <div className="flex items-center justify-center xl:gap-16 gap-12 " id="navLinks">
         <NavLink to="/" className={navLinkClass}>
           Home
         </NavLink>
@@ -48,7 +52,7 @@ export default function Navbar() {
       <div className="flex items-center justify-center gap-2.5">
         <NavButton name="Contact us" />
 
-        <div id="menu">
+        <div className="lg:hidden block"  id="menu">
           <Hamburger
             toggled={isOpen}
             toggle={setIsOpen}
