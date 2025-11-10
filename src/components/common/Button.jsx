@@ -1,12 +1,9 @@
 // Reacr
 import { useState } from "react";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Icons
 import { FaArrowRight } from "react-icons/fa";
-
-
-
 
 // Default
 export default function Button() {
@@ -32,14 +29,14 @@ export function ContactBtn({ name }) {
 }
 
 // TalkBtn
-export function TalkBtn({hoverbg, hovercolor, color, bg}) {
+export function TalkBtn({ hoverbg, hovercolor, color, bg }) {
   return (
     <div
       className="grid place-items-center bg-[var(--main-color)] text-center rounded-full md:ml-10
-      md:w-[172px] md:h-[172px] w-140px h-140px relative z-50
+      md:w-[172px] md:h-[172px] w-[140px] h-[140px] relative z-50
       "
       id="talk-btn"
-       style={{
+      style={{
         "--btn-bg": bg,
         "--btn-color": color,
         "--btn-hover-bg": hoverbg,
@@ -57,7 +54,6 @@ export function TalkBtn({hoverbg, hovercolor, color, bg}) {
     </div>
   );
 }
-
 
 // CommonBtn Like Learn More or Read More
 export function CommonBtn({ border, color, name, hoverColor, hoverBorder }) {

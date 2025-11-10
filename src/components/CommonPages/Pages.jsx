@@ -15,14 +15,10 @@ import Blog1 from "../../assests/images/Blog-1.jpg";
 import Blog2 from "../../assests/images/Blog-2.jpg";
 import Blog3 from "../../assests/images/Blog-3.jpg";
 
-
-
-
-// BTn
+// Import
 import { CommonBtn, TalkBtn } from "../common/Button";
 
 // icon
-import { FaArrowRight } from "react-icons/fa";
 import { BlogCard, ProjectCard } from "../Card/Card";
 
 // Image

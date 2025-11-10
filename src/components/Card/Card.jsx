@@ -1,7 +1,10 @@
-import React from "react";
+// Icon
 import { FaArrowRight } from "react-icons/fa";
+
+// Imports 
 import { CommonBtn } from "../common/Button";
 
+// Default
 export default function DefaultCard() {
   return <h1>Default card check error in Card.jsx</h1>;
 }

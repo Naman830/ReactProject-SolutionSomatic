@@ -1,15 +1,17 @@
-import React from "react";
+// Images
 import heroImg from "../assests/images/heroImg.png";
 import Hero1 from "../assests/images/hero-1.jpg";
 import Hero2 from "../assests/images/hero-2.jpg";
 import Hero3 from "../assests/images/hero-3.jpg";
+import HomeService from "../assests/images/service-home.jpg";
+
+// Icons
 import Service1 from "../assests/icons/service-1.png";
 import Service2 from "../assests/icons/service-2.png";
 import Service3 from "../assests/icons/service-3.png";
 import Service4 from "../assests/icons/service-4.png";
 
-import HomeService from "../assests/images/service-home.jpg";
-import { FaArrowRight } from "react-icons/fa";
+// Imports
 import { TalkBtn } from "../components/common/Button";
 import {
   AboutUs,
@@ -23,7 +25,7 @@ import Newsletter from "../components/common/Newsletter";
 
 const Home = () => {
   return (
-    // Heri
+    // Hero Section
     <>
       <section className="w-full md:py-16 py-8 bg-white">
         <div className="lg:container w-full mx-auto px-4">
@@ -85,7 +87,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* // About us section */}
+    {/* About Section */}
       <section>
         <AboutUs />
       </section>

@@ -1,4 +1,4 @@
-import React from "react";
+// Icon
 import { MdSend } from 'react-icons/md';
 
 export default function Newsletter() {
