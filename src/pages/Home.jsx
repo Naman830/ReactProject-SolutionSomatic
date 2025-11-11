@@ -46,7 +46,7 @@ const Home = () => {
               >
                 Digital
                 <br />
-                <span className="bg-[var(--main-color)] xl:leading-24 inline-block lg:leading-18">SOLUTIONS.</span>
+                <span className="bg-[var(--main-color)] xl:leading-24 inline-block lg:leading-18 sm:leading-14 leading-10">SOLUTIONS.</span>
               </h1>
 
               <figure className="hero-1-figure absolute lg:-top-[30px] md:-top-[0px] md:-right-[6px] top-0 right-0 xl:w-[210px] md:w-[130px] w-[100px]">
