@@ -73,7 +73,7 @@ export function AboutUs() {
             <h3
               className="
                   font-[var[(--font-figtree)]] font-bold
-                  md:text-5xl sm:text-4xl text-3xl
+                  md:text-[50px] md:leading-16 sm:text-4xl text-3xl
                  text-white mb-16 
                  lg:text-left
                  text-center
@@ -215,18 +215,18 @@ export function CtaComponent() {
       <div className="AboutUs-Container lg:container mx-auto px-4 lg:text-left text-center ">
         <div className="grid grid-cols-12 items-center">
           <div className="lg:col-span-9 col-span-12 relative">
-            <span className="block font-[var[(--font-figtree)]] font-[800] xl:text-[144px] xl:leading-[159px] lg:text-9xl md:text-8xl sm:text-7xl text-6xl text-white lg:mb-7 mb-4">
+            <span className="block font-[var[(--font-figtree)]] font-[800] xl:text-[144px] xl:leading-[130px] lg:text-9xl md:text-8xl sm:text-7xl text-6xl text-white lg:mb-7 mb-4">
               PROJECT IN
               <br />
               <span className="block text-[var(--main-color)]">MIND?</span>
             </span>
 
-            <p className="font-[var[(--font-sora)]] font-[400] lg:text-[20px] sm:text-[18px] text-[16px]lg:leading-[27px] sm:leading-6 leading-5 text-white max-w-[650px] inline">
+            <p className="font-[var[(--font-sora)]] font-[400] lg:text-[20px] sm:text-[18px] text-[16px]lg:leading-[27px] sm:leading-6 leading-5 text-white max-w-2xl block lg:mx-0 mx-auto">
               Have a digital project idea you want to bring to life? Let’s
               collaborate and turn your vision into a powerful solution.
             </p>
 
-            <div className="xl:absolute xl:right-[23.5%] xl:bottom-[14%] xl:ml-0 xl:mt-0 mt-5 lg:block flex justify-center items-center -ml-10">
+            <div className="xl:absolute 2xl:right-[23.5%] 2xl:bottom-[8%] xl:right-[10%] xl:bottom-[8%] xl:ml-0 xl:mt-0 mt-5 lg:block flex justify-center items-center -ml-10">
               <TalkBtn
                 bg="#c2ff83"
                 color="#000000"
