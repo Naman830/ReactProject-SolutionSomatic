@@ -249,7 +249,7 @@ export function BlogComponent() {
       <div className="lg:container w-full mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto md:mb-8 mb-6">
           <span className="font-[var[(--font-sora)]] font-[600] lg:text-[20px] lg:leading-5 text-[18px] leading-4 block lg:mb-5 mb-3">Latest Blog</span>
-          <h2 className="font-[var[(--font-figtree)]] font-[800] xl:text-7xl md:text-6xl text-5xl  ">Stay Updated with Our Digital Solutions  <span className="bg-[var(--main-color)]">Blog</span></h2>
+          <h2 className="font-[var[(--font-figtree)]] font-[800] xl:text-7xl md:text-6xl text-5xl  ">Stay Updated with Our Digital Solutions  <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Blog</span></h2>
         </div>
 
         <div className="grid grid-cols-12 gap-6">

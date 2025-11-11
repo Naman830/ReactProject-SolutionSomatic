@@ -54,7 +54,7 @@ const Testimonial = () => {
               </span>
               <h1 className="font-[var[(--font-figtree)]] font-[800] xl:text-7xl lg:text-6xl text-5xl text-black">
                 Hear From{" "}
-                <span className="bg-[var(--main-color)]">Clients</span>
+                <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Clients</span>
                 {" "}
                 Who
                 Trusted Us
