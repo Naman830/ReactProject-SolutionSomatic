@@ -98,7 +98,7 @@ const Home = () => {
             </span>
             <h2 className="font-[var[(--font-figtree)]] font-[800] lg:text-7xl md:text-6xl sm:text-5xl text-4xl">
               Explore Our Full Range of Expert Digital{" "}
-              <span className="bg-[var(--main-color)]">Services</span>
+              <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Services</span>
             </h2>
           </div>
 

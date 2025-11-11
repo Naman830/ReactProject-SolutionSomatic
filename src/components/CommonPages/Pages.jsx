@@ -74,7 +74,6 @@ export function AboutUs() {
               className="
                   font-[var[(--font-figtree)]] font-bold
                   md:text-5xl sm:text-4xl text-3xl
-                  lg:leading-[70px] md:leading-[60px] leading-[42px]
                  text-white mb-16 
                  lg:text-left
                  text-center
@@ -127,7 +126,7 @@ export function ProjectsComponent() {
                 Digital Showcase
               </span>
               <h2 className="font-[var[(--font-figtree)]] lg:text-7xl md:text-6xl text-5xl font-[800] mb-5">
-                Our <span className="bg-[var(--main-color)]">Portfolio</span> of
+                Our <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Portfolio</span> of
                 Expert Digital Solution
               </h2>
             </div>
