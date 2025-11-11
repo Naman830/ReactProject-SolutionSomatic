@@ -38,7 +38,6 @@ const Home = () => {
               >
                 Expert-Driven
               </span>
-
               <h1
                 className="xl:text-[134px] lg:text-[90px] sm:text-[74px] font-[800] font-[var[(--font-figtree)]] xl:leading-[120px] lg:leading-[94px] sm:leading-[74px] uppercase 
             text-[54px] leading-[64px] mb[12px]
@@ -48,14 +47,13 @@ const Home = () => {
                 <br />
                 <span className="bg-[var(--main-color)] xl:leading-24 inline-block lg:leading-18 sm:leading-14 leading-10">SOLUTIONS.</span>
               </h1>
-
               <figure className="hero-1-figure absolute lg:-top-[30px] md:-top-[0px] md:-right-[6px] top-0 right-0 xl:w-[210px] md:w-[130px] w-[100px]">
                 <img src={heroImg} alt="" />
               </figure>
             </div>
 
             <div className="col-span-12 md:block grid place-items-center  md:col-span-5 lg:col-span-5 xl:pl-24 md:pl-8">
-              <p className="font-[var[( --font-sora)]] font-[400] sm:text-[18px] text-[16px] sm:leading-[31px] leading-[24px] md:-mt-[14px] xl:pb-14 pb-4">
+              <p className="font-[var[(--font-sora)]] font-[400] xl:text-[20px] lg:text-[18px] text-[16px] sm:leading-[31px] leading-[24px] md:-mt-[14px] xl:pb-14 pb-4">
                 Leverage the knowledge of seasoned professionals to craft
                 impactful digital strategies. We deliver results-focused
                 solutions tailored to your business goals.
