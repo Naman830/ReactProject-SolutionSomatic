@@ -1,5 +1,7 @@
 import { CtaComponent } from "../components/CommonPages/Pages";
 import Testimonial from "../components/CommonPages/Testimonial";
+import Hero from "../components/common/Hero";
+
 
 const Service = () => {
   return (

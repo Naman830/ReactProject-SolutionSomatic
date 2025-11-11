@@ -1,4 +1,6 @@
 import { ProjectsComponent } from "../components/CommonPages/Pages";
+import Hero from "../components/common/Hero";
+
 
 const Projects = () => {
   return (
