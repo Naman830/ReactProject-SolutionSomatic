@@ -1,10 +1,10 @@
-import React from 'react'
+import { ProjectsComponent } from "../components/CommonPages/Pages"
 
 const Projects = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <ProjectsComponent />
+    </>
   )
 }
 

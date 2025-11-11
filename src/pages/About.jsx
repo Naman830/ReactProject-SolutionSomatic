@@ -1,11 +1,21 @@
-import React from 'react'
+
+import Hero from "../components/common/Hero";
+import { AboutUs, BlogComponent } from "../components/CommonPages/Pages";
 
 function About() {
   return (
-    <div>
+    <>
+      {/* HERO SECTION */}
+      <Hero  heading="About Us"
+        paragraph="We craft results-driven digital strategies that turn vision into measurable impact."
+        pageName="About" />
       
-    </div>
-  )
+      {/* ABOUT SECTION */}
+      <AboutUs />
+      {/* BLOG SECTION */}
+      <BlogComponent />
+    </>
+  );
 }
 
-export default About
+export default About;

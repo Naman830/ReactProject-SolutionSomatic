@@ -1,11 +1,16 @@
-import React from 'react'
+import { CtaComponent } from "../components/CommonPages/Pages";
+import Testimonial from "../components/CommonPages/Testimonial";
 
 const Service = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      {/* CTA SECTION */}
+      <CtaComponent />
 
-export default Service
+      {/* TESTIMONIAL SECTION */}
+      <Testimonial />
+    </>
+  );
+};
+
+export default Service;
