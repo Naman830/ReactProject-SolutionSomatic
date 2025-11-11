@@ -34,7 +34,7 @@ export function TalkBtn({ hoverbg, hovercolor, color, bg }) {
   return (
     <div
       className="grid place-items-center bg-[var(--main-color)] text-center rounded-full md:ml-10
-      md:w-[172px] md:h-[172px] w-[140px] h-[140px] relative z-50
+      lg:w-[172px] lg:h-[172px] sm:w-[140px] w-[120px] sm:h-[140px] h-[120px] relative z-50
       "
       id="talk-btn"
       style={{
