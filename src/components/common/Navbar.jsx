@@ -14,7 +14,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   const navLinkClass = ({ isActive }) =>
-    `transition-all text-black font-400 text-[14px] leading[21px] ${
+    `transition-all text-black font-400 text-[14px] leading-[21px] ${
       isActive ? "bg-[var(--main-color)] font-bold" : ""
     }`;
   const menuDropdownClass = ({ isActive }) =>
@@ -32,10 +32,8 @@ export default function Navbar() {
       </div>
 
       {/* Navlinks */}
-      <div
-        className="flex items-center justify-center xl:gap-16 gap-12 "
-        id="navLinks"
-      >
+     <div className="hidden lg:flex items-center justify-center xl:gap-16 gap-12">
+
         <NavLink to="/" className={navLinkClass}>
           Home
         </NavLink>
