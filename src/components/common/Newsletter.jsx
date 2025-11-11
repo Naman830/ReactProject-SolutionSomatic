@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function Newsletter() {
   return (
-    <section className="w-full md:py-20 py-18 bg-[var(--main-color)]">
+    <section className="w-full md:py-30 py-24 bg-[var(--main-color)]">
       <div className="lg:container w-full mx-auto px-4">
         <div className="flex items-center justify-between lg:flex-row flex-col">
           <h2 className="font-[var[(--font-figtree)]] font-[800] xl:text-7xl md:text-6xl text-5xl lg:text-left text-center mb-6 lg:max-w-full max-w-2xl">
             Stay Tuned & Subscribe to Our{" "}
-            <span className="text-white bg-black">Newsletter</span>
+            <span className="text-white bg-black inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Newsletter</span>
           </h2>
 
           <div className="">

@@ -117,7 +117,7 @@ export function AboutUs() {
 // Project Components
 export function ProjectsComponent() {
   return (
-    <section className="w-full md:py-16 py-8 bg-gray-50">
+    <section className="w-full md:py-24 py-16 bg-gray-50">
       <div className="lg:container w-full mx-auto px-4">
         <div className="grid grid-cols-12 mb-12">
           <div className="lg:col-span-8 col-span-12">
