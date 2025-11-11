@@ -125,15 +125,15 @@ export function ProjectsComponent() {
               <span className="font-[var[(--font-sora)]] font-[600] sm:text-[20px] text-[16px] sm:leading-6 leading-5 mb-5 block">
                 Digital Showcase
               </span>
-              <h2 className="font-[var[(--font-figtree)]] lg:text-7xl md:text-6xl text-5xl font-[800] mb-5">
+              <h2 className="font-[var[(--font-figtree)]] lg:text-7xl md:text-6xl text-5xl font-[800] mb-5 md:leading-22 sm:leading-18 leading-14">
                 Our <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Portfolio</span> of
                 Expert Digital Solution
               </h2>
             </div>
           </div>
-          <div className="lg:col-span-4 col-span-12">
+          <div className="lg:col-span-4 col-span-12 grid place-items-center">
             <div className="text-left ">
-              <p className="font-[var[(--font-sora)]] font-[400] md:text-[18px] text-16px md:leading-7 leading-6 ">
+              <p className="font-[var[(--font-sora)]] font-[400] md:text-[20px]  text-16px md:leading-9 leading-7">
                 Explore our curated portfolio showcasing innovative digital
                 solutions. See how we bring creativity and technology together
                 to drive success.
