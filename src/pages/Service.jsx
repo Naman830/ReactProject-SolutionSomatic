@@ -4,6 +4,12 @@ import Testimonial from "../components/CommonPages/Testimonial";
 const Service = () => {
   return (
     <>
+      {/* HERO SECTION */}
+      <Hero
+        heading="Services"
+        paragraph="We craft results-driven digital strategies that turn vision into measurable impact."
+        pageName="Services"
+      />
       {/* CTA SECTION */}
       <CtaComponent />
 
