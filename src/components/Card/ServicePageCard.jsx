@@ -72,7 +72,7 @@ export function ServiceCardReverse({
 }) {
   return (
     <div className="lg:container w-full mx-auto px-4 " >
-      <div className="grid grid-cols-12 " >
+      <div className="md:grid md:grid-cols-12 flex flex-col-reverse items-center justify-center " >
         <div className="md:col-span-6 col-span-12 md:text-left text-center ">
           <div className="md:pr-16 pt-10">
             <figure className="xl:mb-6 mb-3 md:block grid place-items-center">

@@ -16,7 +16,7 @@ const Service = () => {
         pageName="Services"
       />
       {/* Service Card Section */}
-      <section className="w-full md:py-24 py-16 bg-gray-50">
+      <section className="w-full md:py-24 py-16 bg-gray-50 flex flex-col xl:gap-16 lg:gap-8 gap-7">
         <ServiceCardRow
           serviceImg={ServiceImg1}
           serviceIcon={ServiceIcon1}
@@ -34,6 +34,25 @@ const Service = () => {
           listtext1="Brand Identity Development"
           listtext2="Creative Assets & Collateral"
         />
+
+        <ServiceCardRow
+          serviceImg={ServiceImg1}
+          serviceIcon={ServiceIcon1}
+          heading="Branding & Design"
+          paragraph="Our Branding & Design service helps you define a unique identity, create memorable visuals, and build consistent experiences across all digital touchpoints. We craft brand systems that not only look great but also drive recognition, trust, and engagement."
+          listtext1="Brand Identity Development"
+          listtext2="Creative Assets & Collateral"
+        />
+
+             <ServiceCardReverse
+          serviceImg={ServiceImg1}
+          serviceIcon={ServiceIcon1}
+          heading="Branding & Design"
+          paragraph="Our Branding & Design service helps you define a unique identity, create memorable visuals, and build consistent experiences across all digital touchpoints. We craft brand systems that not only look great but also drive recognition, trust, and engagement."
+          listtext1="Brand Identity Development"
+          listtext2="Creative Assets & Collateral"
+        />
+
       </section>
       {/* CTA SECTION */}
       <CtaComponent />
