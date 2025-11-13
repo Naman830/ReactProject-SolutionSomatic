@@ -3,7 +3,7 @@ import subBanner from '../../assests/images/subBanner.png'
 
 export default function Hero({ heading, paragraph, pageName }) {
     return(
-  <section className="w-full lg:py-20 md:py-14 py-10 bg-gray-50">
+  <section className="w-full lg:pt-24 md:pt-10 py-8 bg-gray-50">
     <div className="lg:container w-full mx-auto px-4">
       <div className="grid grid-cols-12">
         <div className="md:col-span-8 col-span-12 py-10  md:text-left text-center">
