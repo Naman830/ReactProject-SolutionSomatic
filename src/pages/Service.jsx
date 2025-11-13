@@ -3,6 +3,7 @@ import Testimonial from "../components/CommonSection/Testimonial";
 import ServicePageCard from "../components/Card/ServicePageCard";
 import Hero from "../components/common/Hero";
 import ServiceImg1 from "../assests/images/services-img1.jpg"
+import ServiceIcon1 from "../assests/icons/serviceIcon1.png"
 
 const Service = () => {
   return (
@@ -18,6 +19,7 @@ const Service = () => {
         <ServicePageCard 
         serviceImg={ServiceImg1}
         flex="flex-row"
+        serviceIcon={ServiceIcon1}
         />
       </section>
       {/* CTA SECTION */}
