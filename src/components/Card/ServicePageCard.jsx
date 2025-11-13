@@ -36,19 +36,21 @@ export default function ({
 
             <ul className="p-0 list-none">
               <li className="font-[600] relative lg:mb-3 mb-2 text-black pl-6 lg:text-[18px] text-[16px] lg:leading-5 leading-4 ">
-                <GoDotFill /> {listtext1}
+                <GoDotFill className="absolute  left-0 top-1 text-[14px]"/> {listtext1}
               </li>
               <li className="font-[600] relative lg:mb-3 mb-2 text-black pl-6 lg:text-[18px] text-[16px] lg:leading-5 leading-4 ">
-                <GoDotFill /> {listtext2}
+                <GoDotFill className="absolute  left-0 top-1 text-[14px]"/> {listtext2}
               </li>
             </ul>
 
             <CommonBtn
               name={"Read More"}
-              border="2px solid black"
+              border="1px solid black"
               color="black"
               hoverBorder="2px solid transparent"
-              hoverColor="black"
+              hoverColor="white"
+              background="transparent"
+              backgroundHover="black"
             />
           </div>
         </div>

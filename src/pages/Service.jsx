@@ -20,6 +20,11 @@ const Service = () => {
         serviceImg={ServiceImg1}
         flex="flex-row"
         serviceIcon={ServiceIcon1}
+        heading="Branding & Design"
+        paragraph="Our Branding & Design service helps you define a unique identity, create memorable visuals, and build consistent experiences across all digital touchpoints. We craft brand systems that not only look great but also drive recognition, trust, and engagement."
+
+        listtext1="Brand Identity Development"
+        listtext2="Creative Assets & Collateral"
         />
       </section>
       {/* CTA SECTION */}

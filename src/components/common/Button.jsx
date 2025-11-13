@@ -57,7 +57,7 @@ export function TalkBtn({ hoverbg, hovercolor, color, bg }) {
 }
 
 // CommonBtn Like Learn More or Read More
-export function CommonBtn({ border, color, name, hoverColor, hoverBorder }) {
+export function CommonBtn({ border, color, name, background = "transparent", hoverColor, hoverBorder, backgroundHover ="var(--main-color)" }) {
   
 
 
@@ -65,13 +65,14 @@ export function CommonBtn({ border, color, name, hoverColor, hoverBorder }) {
   return (
     <>
       <button
-        className="bg-transparent outline-none rounded-full text-center flex items-center justify-center gap-2 hover:bg-[var(--main-color)] transition-all
+        className=" outline-none rounded-full text-center flex items-center justify-center gap-2 transition-all
         font-[600] text-[14px] leading-4
         "
         style={{
           fontFamily: "var(--font-sora)",
           border: hover ? hoverBorder : border,
           color: hover ? hoverColor : color,
+          backgroundColor: hover ? backgroundHover : background,
         }}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
