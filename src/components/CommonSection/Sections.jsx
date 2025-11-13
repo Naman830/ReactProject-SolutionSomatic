@@ -226,7 +226,7 @@ export function CtaComponent() {
               collaborate and turn your vision into a powerful solution.
             </p>
 
-            <div className="xl:absolute 2xl:right-[23.5%] 2xl:bottom-[8%] xl:right-[10%] xl:bottom-[8%] xl:ml-0 xl:mt-0 mt-5 lg:block flex justify-center items-center -ml-10">
+            <div className="xl:absolute 2xl:right-[23.5%] 2xl:bottom-[8%] xl:right-[10%] xl:bottom-[8%] xl:ml-0 xl:mt-0 mt-5 lg:block flex justify-center items-center md:-ml-10">
               <TalkBtn
                 bg="#c2ff83"
                 color="#000000"
