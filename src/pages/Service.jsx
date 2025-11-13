@@ -1,5 +1,5 @@
-import { CtaComponent } from "../components/CommonPages/Pages";
-import Testimonial from "../components/CommonPages/Testimonial";
+import { CtaComponent } from "../components/CommonSection/Sections";
+import Testimonial from "../components/CommonSection/Testimonial";
 import Hero from "../components/common/Hero";
 
 
@@ -12,6 +12,7 @@ const Service = () => {
         paragraph="We craft results-driven digital strategies that turn vision into measurable impact."
         pageName="Services"
       />
+      {/* Service Card Section */}
       {/* CTA SECTION */}
       <CtaComponent />
 

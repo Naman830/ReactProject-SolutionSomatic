@@ -1,4 +1,4 @@
-import { ProjectsComponent } from "../components/CommonPages/Pages";
+import { ProjectsComponent } from "../components/CommonSection/Sections";
 import Hero from "../components/common/Hero";
 
 

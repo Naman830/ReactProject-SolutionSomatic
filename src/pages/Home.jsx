@@ -18,9 +18,9 @@ import {
   BlogComponent,
   CtaComponent,
   ProjectsComponent,
-} from "../components/CommonPages/Pages";
+} from "../components/CommonSection/Sections";
 import { ServiceCard } from "../components/Card/Card";
-import Testimonial from "../components/CommonPages/Testimonial";
+import Testimonial from "../components/CommonSection/Testimonial";
 
 const Home = () => {
   return (

@@ -1,5 +1,5 @@
 import Hero from "../components/common/Hero";
-import { AboutUs, BlogComponent } from "../components/CommonPages/Pages";
+import { AboutUs, BlogComponent } from "../components/CommonSection/Sections";
 
 function About() {
   return (
