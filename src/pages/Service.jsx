@@ -24,7 +24,7 @@ const Service = () => {
         pageName="Services"
       />
       {/* Service Card Section */}
-      <section className="w-full md:py-24 py-16 bg-gray-50 flex flex-col xl:gap-16 lg:gap-8 gap-7">
+      <section className="w-full md:pt-10 md:pb-24 pt-8 pb-12 bg-gray-50 flex flex-col xl:gap-16 lg:gap-8 gap-7">
         <ServiceCardRow
           serviceImg={ServiceImg1}
           serviceIcon={ServiceIcon1}
