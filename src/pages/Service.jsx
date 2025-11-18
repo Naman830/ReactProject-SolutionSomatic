@@ -49,7 +49,7 @@ const Service = () => {
           heading="Digital Marketing"
           paragraph="We create data-driven digital marketing strategies that help you attract the right audience, increase engagement, and drive measurable growth. From content and SEO to paid media and analytics, our team works across channels to build campaigns."
           listtext1="Search Engine Optimization (SEO) "
-          listtext2="Content & Social Media Marketing"
+          listtext2="Content & Social Medias Marketing (SMM)"
         />
 
         <ServiceCardReverse

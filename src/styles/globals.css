@@ -366,11 +366,20 @@ figure {
 /* ============================================================================================  */
 /* Service Page */
 
-#serviceImg figure img {
+#serviceImg figure img,
+.who-we-are-1 figure img {
   transition: ease-in-out 1s;
 }
 
-#serviceImg figure:hover img {
+#serviceImg figure:hover img,
+.who-we-are-1 figure:hover  img{
   transform: scale(1.02);
   border-radius: 34px;
 }
+
+
+
+/* ================================================================================================ */
+
+
+
