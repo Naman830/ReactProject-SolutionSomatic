@@ -409,3 +409,23 @@ figure {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+/* =============================================== */
+/* team image */
+.teamCard{
+	transition: ease-in-out 0.6s;
+}
+.teamCard:hover{
+	transform: translateY(-6px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	background-color: var(--secondary--color);
+}
+
+.teamImage{
+  transition: ease-in-out 1s;
+}
+
+.teamImage:hover{
+	transform: scale(1.02);
+}

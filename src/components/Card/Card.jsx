@@ -5,6 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { CommonBtn } from "../common/Button";
 import { Link } from "react-router-dom";
 import { div } from "three/tsl";
+import Icon from "../common/Icon";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 // Default
 export default function DefaultCard() {
@@ -150,18 +152,60 @@ export function AboutCard({ aboutImage, aboutName, aboutPara }) {
 // Our Team Card
 
 export function TeamCard({ teamImage, teamName, teamRole }) {
-  return(
-    <div>
+  return (
+    <div className="teamCard w-full bg-white rounded-[20px] pb-5 text-center relative">
       <div className="team-Img">
-        <figure>
-          <img src={teamImage} alt="team image cardJSX" />
+        <figure className="mb-6 relative">
+          <img
+            src={teamImage}
+            alt="team image cardJSX"
+            className="rounded-[20px] teamImage"
+          />
         </figure>
       </div>
 
-      <div>
-        <h6>{teamName}</h6>
-        <span>{teamRole}</span>
+      <div className="text-center">
+        <h6 className="text-[22px] mb-2 font-[700]">{teamName}</h6>
+        <span className="mb-5 inline-block text-[18px] font-[400] text-[#616161]">
+          {teamRole}
+        </span>
+        <div className="flex items-center justify-center gap-4">
+          <Icon
+            color="black"
+            bgColor="var(--main-color)"
+            border="2px solid white"
+            hoverColor="var(--main-color)"
+            hoverBg="black"
+            hoverBorder="2px solid transparent"
+          >
+            <FaFacebookF />
+          </Icon>
+
+          {/* Instagram */}
+          <Icon
+            color="black"
+            bgColor="var(--main-color)"
+            border="2px solid white"
+            hoverColor="var(--main-color)"
+            hoverBg="black"
+            hoverBorder="2px solid transparent"
+          >
+            <FaInstagram />
+          </Icon>
+
+          {/* LinkedIn */}
+          <Icon
+            color="black"
+            bgColor="var(--main-color)"
+            border="2px solid white"
+            hoverColor="var(--main-color)"
+            hoverBg="black"
+            hoverBorder="2px solid transparent"
+          >
+            <FaLinkedinIn />
+          </Icon>
+        </div>
       </div>
     </div>
-  )
+  );
 }

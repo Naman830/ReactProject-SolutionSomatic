@@ -3,10 +3,12 @@ import { AboutUs, BlogComponent } from "../components/CommonSection/Sections";
 import whoImage1 from "../assests/images/who-we-are-img.jpg";
 import { CommonBtn } from "../components/common/Button";
 import { AboutCard } from "../components/Card/Card";
+import { TeamCard } from "../components/Card/Card";
 import aboutImage1 from "../assests/images/About-card-1.png";
 import aboutImage2 from "../assests/images/About-card-2.png";
 import aboutImage3 from "../assests/images/About-card-3.png";
 import aboutImage4 from "../assests/images/About-card-4.png";
+import TeamMember1 from "../assests/images/team-person1.jpg";
 
 function About() {
   return (
@@ -137,7 +139,13 @@ function About() {
           </div>
 
           <div className="grid grid-cols-12 xl:gap-10 gap-5 w-full">
-            <div className="lg:col-span-3 col-span-12"></div>
+            <div className="lg:col-span-3 col-span-12">
+              <TeamCard 
+              teamImage={TeamMember1}
+              teamName="Emma Collins"
+              teamRole="Creative Director"
+              />
+            </div>
             <div className="lg:col-span-3 col-span-12"></div>
             <div className="lg:col-span-3 col-span-12"></div>
             <div className="lg:col-span-3 col-span-12"></div>
