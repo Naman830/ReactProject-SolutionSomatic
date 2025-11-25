@@ -126,8 +126,11 @@ export function ProjectsComponent() {
                 Digital Showcase
               </span>
               <h2 className="font-[var[(--font-figtree)]] lg:text-7xl md:text-6xl text-5xl font-[800] mb-5 md:leading-22 sm:leading-18 leading-14">
-                Our <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Portfolio</span> of
-                Expert Digital Solution
+                Our{" "}
+                <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">
+                  Portfolio
+                </span>{" "}
+                of Expert Digital Solution
               </h2>
             </div>
           </div>
@@ -166,20 +169,20 @@ export function ProjectsComponent() {
           </div>
           <div className="grid grid-cols-12">
             <div className="projectDiv md:col-span-7 col-span-12">
-                <ProjectCard
-                  projectImage={ProjectImg3}
-                  projectShowcaseName1="Dashboard"
-                  projectShowcaseName2="UIDesign"
-                  showcaseHeading="Smart Dashboard Design"
-                />
+              <ProjectCard
+                projectImage={ProjectImg3}
+                projectShowcaseName1="Dashboard"
+                projectShowcaseName2="UIDesign"
+                showcaseHeading="Smart Dashboard Design"
+              />
             </div>
             <div className="projectDiv md:col-span-5 col-span-12">
-                <ProjectCard
-                  projectImage={ProjectImg4}
-                  projectShowcaseName1="App"
-                  projectShowcaseName2="Interface"
-                  showcaseHeading="Custom Mobile App"
-                />
+              <ProjectCard
+                projectImage={ProjectImg4}
+                projectShowcaseName1="App"
+                projectShowcaseName2="Interface"
+                showcaseHeading="Custom Mobile App"
+              />
             </div>
           </div>
         </div>
@@ -248,37 +251,41 @@ export function BlogComponent() {
     <section className="w-full md:py-16 py-8 bg-[#F9F9F9]">
       <div className="lg:container w-full mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto md:mb-8 mb-6">
-          <span className="font-[var[(--font-sora)]] font-[600] lg:text-[20px] lg:leading-5 text-[18px] leading-4 block lg:mb-5 mb-3">Latest Blog</span>
-          <h2 className="font-[var[(--font-figtree)]] font-[800] xl:text-7xl md:text-6xl text-5xl  ">Stay Updated with Our Digital Solutions  <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">Blog</span></h2>
+          <span className="font-[var[(--font-sora)]] font-[600] lg:text-[20px] lg:leading-5 text-[18px] leading-4 block lg:mb-5 mb-3">
+            Latest Blog
+          </span>
+          <h2 className="font-[var[(--font-figtree)]] font-[800] xl:text-7xl md:text-6xl text-5xl  ">
+            Stay Updated with Our Digital Solutions{" "}
+            <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">
+              Blog
+            </span>
+          </h2>
         </div>
 
         <div className="grid grid-cols-12 gap-6">
           <div className="lg:col-span-4 sm:col-span-6 col-span-12">
-            <BlogCard 
-            BlogImage={Blog1}
-            BlogDate="By Admin | Nov 10, 2025"
-            BlogName="The Future of Web Design: Trends to Watch in 2025"
+            <BlogCard
+              BlogImage={Blog1}
+              BlogDate="By Admin | Nov 10, 2025"
+              BlogName="The Future of Web Design: Trends to Watch in 2025"
             />
           </div>
           <div className="lg:col-span-4 sm:col-span-6 col-span-12">
-            <BlogCard 
-             BlogImage={Blog2}
-            BlogDate="By Admin | Nov 10, 2025"
-            BlogName="The Future of Web Design: Trends to Watch in 2025"
+            <BlogCard
+              BlogImage={Blog2}
+              BlogDate="By Admin | Nov 10, 2025"
+              BlogName="The Future of Web Design: Trends to Watch in 2025"
             />
           </div>
           <div className="lg:col-span-4 sm:col-span-6 col-span-12">
-            <BlogCard 
-             BlogImage={Blog3}
-            BlogDate="By Admin | Nov 10, 2025"
-            BlogName="The Future of Web Design: Trends to Watch in 2025"
+            <BlogCard
+              BlogImage={Blog3}
+              BlogDate="By Admin | Nov 10, 2025"
+              BlogName="The Future of Web Design: Trends to Watch in 2025"
             />
           </div>
-
         </div>
       </div>
     </section>
   );
 }
-
-
