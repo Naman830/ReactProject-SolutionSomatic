@@ -141,29 +141,29 @@ function About() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-12 xl:gap-10 gap-5 w-full">
-            <div className="lg:col-span-3 col-span-12">
+          <div className="grid grid-cols-12 xl:gap-10 gap-5 w-full sm:px-0 px-16">
+            <div className="lg:col-span-3 sm:col-span-6 col-span-12">
               <TeamCard
                 teamImage={TeamMember1}
                 teamName="Emma Collins"
                 teamRole="Creative Director"
               />
             </div>
-            <div className="lg:col-span-3 col-span-12">
+            <div className="lg:col-span-3 sm:col-span-6 col-span-12">
               <TeamCard
                 teamImage={TeamMember2}
                 teamName="James Bennett "
                 teamRole="Lead UX Designer"
               />
             </div>
-            <div className="lg:col-span-3 col-span-12">
+            <div className="lg:col-span-3 sm:col-span-6 col-span-12">
               <TeamCard
                 teamImage={TeamMember3}
                 teamName="Sophie Turner"
                 teamRole="Digital Strategist"
               />
             </div>
-            <div className="lg:col-span-3 col-span-12">
+            <div className="lg:col-span-3 sm:col-span-6 col-span-12">
               <TeamCard
                 teamImage={TeamMember4}
                 teamName="Daniel Harris"

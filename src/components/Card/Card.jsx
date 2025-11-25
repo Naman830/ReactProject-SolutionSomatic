@@ -154,7 +154,7 @@ export function AboutCard({ aboutImage, aboutName, aboutPara }) {
 export function TeamCard({ teamImage, teamName, teamRole }) {
   return (
     <div className="teamCard w-full bg-white rounded-[20px] pb-5 text-center relative">
-      <div className="team-Img">
+      <div className="team-Img lg:px-0 sm:px-10 m-auto ">
         <figure className="mb-6 relative grid place-items-center">
           <img
             src={teamImage}

@@ -253,21 +253,21 @@ export function BlogComponent() {
         </div>
 
         <div className="grid grid-cols-12 gap-6">
-          <div className="lg:col-span-4 col-span-6">
+          <div className="lg:col-span-4 sm:col-span-6 col-span-12">
             <BlogCard 
             BlogImage={Blog1}
             BlogDate="By Admin | Nov 10, 2025"
             BlogName="The Future of Web Design: Trends to Watch in 2025"
             />
           </div>
-          <div className="lg:col-span-4 col-span-6">
+          <div className="lg:col-span-4 sm:col-span-6 col-span-12">
             <BlogCard 
              BlogImage={Blog2}
             BlogDate="By Admin | Nov 10, 2025"
             BlogName="The Future of Web Design: Trends to Watch in 2025"
             />
           </div>
-          <div className="lg:col-span-4 col-span-6">
+          <div className="lg:col-span-4 sm:col-span-6 col-span-12">
             <BlogCard 
              BlogImage={Blog3}
             BlogDate="By Admin | Nov 10, 2025"
