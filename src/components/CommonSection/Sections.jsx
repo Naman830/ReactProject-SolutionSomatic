@@ -117,77 +117,45 @@ export function AboutUs() {
 // Project Components
 export function ProjectsComponent() {
   return (
-    <section className="w-full md:py-24 py-16 bg-gray-50">
-      <div className="lg:container w-full mx-auto px-4">
-        <div className="grid grid-cols-12 mb-12">
-          <div className="lg:col-span-8 col-span-12">
-            <div className="text-left">
-              <span className="font-[var[(--font-sora)]] font-[600] sm:text-[20px] text-[16px] sm:leading-6 leading-5 mb-5 block">
-                Digital Showcase
-              </span>
-              <h2 className="font-[var[(--font-figtree)]] lg:text-7xl md:text-6xl text-5xl font-[800] mb-5 md:leading-22 sm:leading-18 leading-14">
-                Our{" "}
-                <span className="bg-[var(--main-color)] inline-block lg:leading-14 md:leading-12 sm:leading-10 leading-8">
-                  Portfolio
-                </span>{" "}
-                of Expert Digital Solution
-              </h2>
-            </div>
-          </div>
-          <div className="lg:col-span-4 col-span-12 grid place-items-center">
-            <div className="text-left ">
-              <p className="font-[var[(--font-sora)]] font-[400] md:text-[20px]  text-16px md:leading-9 leading-7">
-                Explore our curated portfolio showcasing innovative digital
-                solutions. See how we bring creativity and technology together
-                to drive success.
-              </p>
-            </div>
-          </div>
+    <div className="flex flex-col items-center justify-center">
+      <div className="grid grid-cols-12">
+        <div className="projectDiv md:col-span-5 col-span-12">
+          <ProjectCard
+            projectImage={ProjectImg1}
+            projectShowcaseName1="Responsive"
+            projectShowcaseName2="Design"
+            showcaseHeading="Innovative Website Design"
+          />
         </div>
 
-        {/* Part-2 */}
-
-        <div className="flex flex-col items-center justify-center">
-          <div className="grid grid-cols-12">
-            <div className="projectDiv md:col-span-5 col-span-12">
-              <ProjectCard
-                projectImage={ProjectImg1}
-                projectShowcaseName1="Responsive"
-                projectShowcaseName2="Design"
-                showcaseHeading="Innovative Website Design"
-              />
-            </div>
-
-            <div className="projectDiv md:col-span-7 col-span-12">
-              <ProjectCard
-                projectImage={ProjectImg2}
-                projectShowcaseName1="Logo"
-                projectShowcaseName2="Strategy"
-                showcaseHeading="Brand Identity Makeover"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-12">
-            <div className="projectDiv md:col-span-7 col-span-12">
-              <ProjectCard
-                projectImage={ProjectImg3}
-                projectShowcaseName1="Dashboard"
-                projectShowcaseName2="UIDesign"
-                showcaseHeading="Smart Dashboard Design"
-              />
-            </div>
-            <div className="projectDiv md:col-span-5 col-span-12">
-              <ProjectCard
-                projectImage={ProjectImg4}
-                projectShowcaseName1="App"
-                projectShowcaseName2="Interface"
-                showcaseHeading="Custom Mobile App"
-              />
-            </div>
-          </div>
+        <div className="projectDiv md:col-span-7 col-span-12">
+          <ProjectCard
+            projectImage={ProjectImg2}
+            projectShowcaseName1="Logo"
+            projectShowcaseName2="Strategy"
+            showcaseHeading="Brand Identity Makeover"
+          />
         </div>
       </div>
-    </section>
+      <div className="grid grid-cols-12">
+        <div className="projectDiv md:col-span-7 col-span-12">
+          <ProjectCard
+            projectImage={ProjectImg3}
+            projectShowcaseName1="Dashboard"
+            projectShowcaseName2="UIDesign"
+            showcaseHeading="Smart Dashboard Design"
+          />
+        </div>
+        <div className="projectDiv md:col-span-5 col-span-12">
+          <ProjectCard
+            projectImage={ProjectImg4}
+            projectShowcaseName1="App"
+            projectShowcaseName2="Interface"
+            showcaseHeading="Custom Mobile App"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
