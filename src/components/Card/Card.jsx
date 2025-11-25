@@ -1,16 +1,15 @@
 // Icon
 import { FaArrowRight } from "react-icons/fa";
 
-// Imports 
+// Imports
 import { CommonBtn } from "../common/Button";
 import { Link } from "react-router-dom";
+import { div } from "three/tsl";
 
 // Default
 export default function DefaultCard() {
   return <h1>Default card check error in Card.jsx</h1>;
 }
-
-
 
 // Service card
 export function ServiceCard({
@@ -20,9 +19,11 @@ export function ServiceCard({
   serviceHiddenImage,
 }) {
   return (
-    <div className="services xl:h-56 lg:h-44 gap-5 items-center relative border-t-[1px] border-[#dfdfdf]
+    <div
+      className="services xl:h-56 lg:h-44 gap-5 items-center relative border-t-[1px] border-[#dfdfdf]
     xl:py-2.5 xl:pl-10 py-5 px-2.5 hover:rounded-3xl hover:bg-[var(--main-color)] hover:border-[var[(--main-color)]]
-    ">
+    "
+    >
       <figure id="serviceImg" className="sm:block hidden">
         <img src={serviceIcon} alt="" />
       </figure>
@@ -36,15 +37,17 @@ export function ServiceCard({
           </p>
         </div>
         <div className="relative" id="serviceHiddenImage">
-          <figure className="w-full opacity-0 invisible z-10  absolute
+          <figure
+            className="w-full opacity-0 invisible z-10  absolute
           2xl:-top-44 2xl:left-2/4 lg:block hidden
-          ">
+          "
+          >
             <img src={serviceHiddenImage} alt="" className="rounded-4xl" />
           </figure>
         </div>
         <div className="">
           <Link
-          to="/projects"
+            to="/projects"
             href="#"
             className="lg:h-20 lg:min-w-20 md:h-16 md:min-w-16 h-12 min-w-12 inline-flex items-center justify-center md:text-2xl text-[18px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400] 
             "
@@ -72,12 +75,18 @@ export function ProjectCard({
 
       <div className="flex items-center justify-between">
         <div className=" inline">
-          <span className="bg-white text-black py-1.5 px-5 rounded-2xl text-[14px] leading-5 font-[500] mb-3.5 inline ">{projectShowcaseName1}</span>
-          <span className="bg-white text-black py-1.5 px-5 rounded-2xl text-[14px] leading-5 font-[500] mb-3.5 inline ml-2.5 ">{projectShowcaseName2}</span>
-          <h5 className="font-[var[(--font-figtree)]] font-[700] lg:text-4xl text-3xl mt-2">{showcaseHeading}</h5>
+          <span className="bg-white text-black py-1.5 px-5 rounded-2xl text-[14px] leading-5 font-[500] mb-3.5 inline ">
+            {projectShowcaseName1}
+          </span>
+          <span className="bg-white text-black py-1.5 px-5 rounded-2xl text-[14px] leading-5 font-[500] mb-3.5 inline ml-2.5 ">
+            {projectShowcaseName2}
+          </span>
+          <h5 className="font-[var[(--font-figtree)]] font-[700] lg:text-4xl text-3xl mt-2">
+            {showcaseHeading}
+          </h5>
         </div>
         <Link
-        to="/projects"
+          to="/projects"
           href="#"
           className="projectArrow  lg:h-16 lg:min-w-16 md:h-14 md:min-w-14 h-10 min-w-10 inline-flex items-center justify-center md:text-2xl text-[16px] transition-all ease-in-out bg-transparent border-[1px] border-black rounded-full font-[400]"
         >
@@ -117,4 +126,42 @@ export function BlogCard({ BlogImage, BlogDate, BlogName }) {
       </div>
     </div>
   );
+}
+
+// About Card
+export function AboutCard({ aboutImage, aboutName, aboutPara }) {
+  return (
+    <div className="about-card w-full bg-white rounded-[20px] flex flex-col items-left justify-center border border-transparent hover:border-black">
+      <figure className="mb-6">
+        <img src={aboutImage} alt="aboutcard-cardjsx" />
+      </figure>
+
+      <h6 className="text-[26px] leading-8 font-[700] mb-4 xl:max-w-[210px]">
+        {aboutName}
+      </h6>
+
+      <p className="text-[18px] leading-6 xl:max-w-[230px] font-[400] text-[#404040]">
+        {aboutPara}
+      </p>
+    </div>
+  );
+}
+
+// Our Team Card
+
+export function TeamCard({ teamImage, teamName, teamRole }) {
+  return(
+    <div>
+      <div className="team-Img">
+        <figure>
+          <img src={teamImage} alt="team image cardJSX" />
+        </figure>
+      </div>
+
+      <div>
+        <h6>{teamName}</h6>
+        <span>{teamRole}</span>
+      </div>
+    </div>
+  )
 }
