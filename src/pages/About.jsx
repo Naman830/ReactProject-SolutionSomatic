@@ -9,6 +9,9 @@ import aboutImage2 from "../assests/images/About-card-2.png";
 import aboutImage3 from "../assests/images/About-card-3.png";
 import aboutImage4 from "../assests/images/About-card-4.png";
 import TeamMember1 from "../assests/images/team-person1.jpg";
+import TeamMember2 from "../assests/images/team-person2.jpg";
+import TeamMember3 from "../assests/images/team-person3.jpg";
+import TeamMember4 from "../assests/images/team-person4.jpg";
 
 function About() {
   return (
@@ -140,15 +143,33 @@ function About() {
 
           <div className="grid grid-cols-12 xl:gap-10 gap-5 w-full">
             <div className="lg:col-span-3 col-span-12">
-              <TeamCard 
-              teamImage={TeamMember1}
-              teamName="Emma Collins"
-              teamRole="Creative Director"
+              <TeamCard
+                teamImage={TeamMember1}
+                teamName="Emma Collins"
+                teamRole="Creative Director"
               />
             </div>
-            <div className="lg:col-span-3 col-span-12"></div>
-            <div className="lg:col-span-3 col-span-12"></div>
-            <div className="lg:col-span-3 col-span-12"></div>
+            <div className="lg:col-span-3 col-span-12">
+              <TeamCard
+                teamImage={TeamMember2}
+                teamName="James Bennett "
+                teamRole="Lead UX Designer"
+              />
+            </div>
+            <div className="lg:col-span-3 col-span-12">
+              <TeamCard
+                teamImage={TeamMember3}
+                teamName="Sophie Turner"
+                teamRole="Digital Strategist"
+              />
+            </div>
+            <div className="lg:col-span-3 col-span-12">
+              <TeamCard
+                teamImage={TeamMember4}
+                teamName="Daniel Harris"
+                teamRole="Front-End Developer"
+              />
+            </div>
           </div>
         </div>
       </section>

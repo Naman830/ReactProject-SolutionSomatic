@@ -155,11 +155,11 @@ export function TeamCard({ teamImage, teamName, teamRole }) {
   return (
     <div className="teamCard w-full bg-white rounded-[20px] pb-5 text-center relative">
       <div className="team-Img">
-        <figure className="mb-6 relative">
+        <figure className="mb-6 relative grid place-items-center">
           <img
             src={teamImage}
             alt="team image cardJSX"
-            className="rounded-[20px] teamImage"
+            className="rounded-[20px] teamImage h-auto w-full"
           />
         </figure>
       </div>
